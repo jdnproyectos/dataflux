@@ -1,0 +1,50 @@
+<div id="headertop">
+
+  <ul id="headertoptabs">
+    <li>HOME</li>
+    <li>MISIÓN</li>
+    <li>¿QUIENES SÓMOS?</li>
+    <li>NUESTROS SERVICIOS</li>
+    <li>CONTACTO</li>
+  </ul>
+
+  <ul id="headertopsocial">
+    <li>fb</li>
+    <li>tw</li>
+    <li>m</li>
+  </ul>
+  
+</div>
+<div id="header">
+
+  <%= link_to image_tag("logo.png"), :id=>"logo" %>
+  
+  <span>
+    En DataFlux dirigimos y mantenemos sus redes, equipos y herramientas en óptimo estado.
+  </span>
+  
+  <% form_tag "/", :method=>"get" do %>
+    <%= text_field_tag "searchinput", nil, :placeholder=>"Realiza tu búsqueda" %>
+    <%= submit_tag "", :id=>"searchsubmit" %>
+  <% end %>
+  
+  <div>
+    <span>Para más información escribe a info@dataflux.com.co</span>
+    <span>Llámanos al (57) 3220000 - (57) 3220000</span>
+  </div>
+  
+</div>
+<div id="headerbottom">
+
+  <ul id="headerbottomtabs">
+    <li>Redes de Datos</li>
+    <li>Servidores y Soluciones Open Source</li>
+    <li>Seguridad IT</li>
+    <li>VoIP</li>
+    <li>Dominios</li>
+    <li>Correos</li>
+    <li>Hosting</li>
+    <li>CCTV</li>
+  </ul>
+
+</div>
