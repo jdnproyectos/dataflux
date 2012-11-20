@@ -1,35 +1,51 @@
 <div id="headertop">
 
   <ul id="headertoptabs">
-    <li>HOME</li>
-    <li>MISIÓN</li>
-    <li>¿QUIENES SÓMOS?</li>
-    <li>NUESTROS SERVICIOS</li>
-    <li>CONTACTO</li>
+    <li class="<%= controller.controller_name=='home' ? 'activetab' : '' %>">
+      <div class="tab1 activetabfader"></div>
+      <%= link_to "HOME", root_path %>
+    </li>
+    <li class="<%= controller.controller_name=='mision' ? 'activetab' : '' %>">
+      <div class="tab2 activetabfader"></div>
+      <%= link_to "MISIÓN", "javascript:void(0)" %>
+    </li>
+    <li class="<%= controller.controller_name=='quienes_somos' ? 'activetab' : '' %>">
+      <div class="tab3 activetabfader long"></div>
+      <%= link_to "¿QUIENES SÓMOS?", "javascript:void(0)", :class=>"long" %>
+    </li>
+    <li class="<%= controller.controller_name=='nuestros_servicios' ? 'activetab' : '' %>">
+      <div class="tab4 activetabfader long"></div>
+      <%= link_to "NUESTROS SERVICIOS", "javascript:void(0)", :class=>"long" %>
+    </li>
+    <li class="<%= controller.controller_name=='contacto' ? 'activetab' : '' %>">
+      <div class="tab5 activetabfader"></div>
+      <%= link_to "CONTACTO", "javascript:void(0)" %>
+    </li>
   </ul>
 
   <ul id="headertopsocial">
-    <li>fb</li>
-    <li>tw</li>
-    <li>m</li>
+    <li class="tw"><%= link_to image_tag("social_tw.png"), "javascript:void(0)" %></li>
+    <li class="fb"><%= link_to image_tag("social_fb.png"), "javascript:void(0)" %></li>
+    <li class="mail"><%= link_to image_tag("social_mail.png"), "javascript:void(0)" %></li>
   </ul>
   
 </div>
 <div id="header">
 
-  <%= link_to image_tag("logo.png"), :id=>"logo" %>
+  <div id="logozone"><a href="/"></a></div>
   
-  <span>
-    En DataFlux dirigimos y mantenemos sus redes, equipos y herramientas en óptimo estado.
+  <span id="header_caption">
+    En <strong>DataFlux</strong> dirigimos y mantenemos sus redes, equipos y herramientas en óptimo estado.
   </span>
   
-  <% form_tag "/", :method=>"get" do %>
+  <%= form_tag "/", :method=>"get" do %>
     <%= text_field_tag "searchinput", nil, :placeholder=>"Realiza tu búsqueda" %>
-    <%= submit_tag "", :id=>"searchsubmit" %>
+    <%= image_tag "searchbutton.png", :id=>"searchbutton" %>
+    <%= submit_tag " ", :id=>"searchsubmit" %>
   <% end %>
   
-  <div>
-    <span>Para más información escribe a info@dataflux.com.co</span>
+  <div id="header_moreinfo">
+    <span>Para más información escribe a <strong>info@dataflux.com.co</strong></span>
     <span>Llámanos al (57) 3220000 - (57) 3220000</span>
   </div>
   
