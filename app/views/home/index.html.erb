@@ -1,25 +1,25 @@
 <div id="maincontainer">
-
-  <h1>Data<span class="flux">Flux</span> lorem ipsum dolor sit amet</h1>
   
-  <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</h2>
-  
-  <span id="spanbutton">Empezar ahora!</span>
+  <div class="maincontainer_caption">
+    <h1>Data<span class="flux">Flux</span> lorem ipsum dolor sit amet</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</h2>
+    <span id="spanbutton"><%= link_to "Empezar ahora!", "javascript:void(0)" %></span>
+  </div>
   
 </div>
-<div id="extracontainer">
+<div id="subcontainer">
 
   <div id="extra_left">
-    <%= link_to image_tag("extra_th.png"), :id=>"extra_th" %>
+    <%= link_to image_tag("extra_th.png"), "javascript:void(0)", :id=>"extra_th" %>
     <h3>Lorem ipsum dolor sit amet</h3>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <span id="extra_spantab">NOTICIAS/NOVEDADES</span>
+    <span id="extra_spantab"><%= link_to "NOTICIAS/NOVEDADES", "javascript:void(0)" %></span>
   </div>
   
   <div id="extra_right">
-    <span class="extra_right_row"> <%#= image_tag "extra1.png" %> Servicios DATA<span class="flux">FLUX</span> </span>
-    <span class="extra_right_row"> <%#= image_tag "extra2.png" %> Certificaciones </span>
-    <span class="extra_right_row"> <%#= image_tag "extra3.png" %> Escríbenos para cualquier inquietud </span>
+    <span class="extra_right_row"> <%#= image_tag "extra1.png" %> Extra sub 1 </span>
+    <span class="extra_right_row"> <%#= image_tag "extra2.png" %> Extra sub 2 </span>
+    <span class="extra_right_row"> <%#= image_tag "extra3.png" %> Extra sub 3 </span>
   </div>
   
 </div>
