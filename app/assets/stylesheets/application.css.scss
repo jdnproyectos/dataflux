@@ -54,7 +54,6 @@ body ul {
   background:         url("/assets/headertoptabhover.png");
   height:             32px;
   position:           absolute;
-  width:              90px;
   opacity:            0;
   transition:         all 0.3s;
   -moz-transition:    all 0.3s;
@@ -62,14 +61,18 @@ body ul {
   -o-transition:      all 0.3s;
   -ms-transition:     all 0.3s;
 }
+.activetabfader, #headertoptabs li a {
+  width:              144px !important;
+}
+#headertoptabs li a img {
+  position:           relative;
+  top:                -3px;
+}
 .activetabfader.tab1, #headertoptabs li:first-child a { border-radius:      3px 0 0 0; }
-.activetabfader.tab5, #headertoptabs li:last-child a {  border-radius:      0 3px 0 0; }
-.activetabfader.long, #headertoptabs li a.long {        width:              150px;     }
-.activetabfader.tab5, #headertoptabs li:last-child a {  width:              97px;      }
-.activetabfader.tab2 {                                  left:               90px;      }
-.activetabfader.tab3 {                                  left:               180px;     }
-.activetabfader.tab4 {                                  left:               330px;     }
-.activetabfader.tab5 {                                  left:               480px;     }
+.activetabfader.tab2 {                                  left:               144px;     }
+.activetabfader.tab3 {                                  left:               288px;     }
+.activetabfader.tab5 {                                  left:               432px;     }
+.activetabfader.tab5, #headertoptabs li:last-child a {  border-radius:      0 3px 0 0; width:145px !important; }
 #headertoptabs li:hover .activetabfader, li.activetab .activetabfader {
   opacity:            1;
 }

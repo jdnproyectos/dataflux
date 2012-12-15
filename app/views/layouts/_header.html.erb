@@ -3,23 +3,19 @@
   <ul id="headertoptabs">
     <li class="<%= controller.controller_name=='home' ? 'activetab' : '' %>">
       <div class="tab1 activetabfader"></div>
-      <%= link_to "HOME", root_path %>
+      <%= link_to image_tag("tab_home.png"), "javascript:void(0)" %>
     </li>
-    <li class="<%= controller.controller_name=='mision' ? 'activetab' : '' %>">
+    <li class="<%= controller.controller_name=='servicios' ? 'activetab' : '' %>">
       <div class="tab2 activetabfader"></div>
-      <%= link_to "MISIÓN", "javascript:void(0)" %>
+      <%= link_to image_tag("tab_servicios.png"), "javascript:void(0)" %>
     </li>
     <li class="<%= controller.controller_name=='quienes_somos' ? 'activetab' : '' %>">
       <div class="tab3 activetabfader long"></div>
-      <%= link_to "¿QUIENES SÓMOS?", "javascript:void(0)", :class=>"long" %>
-    </li>
-    <li class="<%= controller.controller_name=='nuestros_servicios' ? 'activetab' : '' %>">
-      <div class="tab4 activetabfader long"></div>
-      <%= link_to "NUESTROS SERVICIOS", "javascript:void(0)", :class=>"long" %>
+      <%= link_to image_tag("tab_quienes_somos.png"), "javascript:void(0)" %>
     </li>
     <li class="<%= controller.controller_name=='contacto' ? 'activetab' : '' %>">
       <div class="tab5 activetabfader"></div>
-      <%= link_to "CONTACTO", "javascript:void(0)" %>
+      <%= link_to image_tag("tab_contacto.png"), "javascript:void(0)" %>
     </li>
   </ul>
 
