@@ -3,11 +3,11 @@
   <ul id="headertoptabs">
     <li class="<%= controller.controller_name=='home' ? 'activetab' : '' %>">
       <div class="tab1 activetabfader"></div>
-      <%= link_to image_tag("tab_home.png"), "javascript:void(0)", :title=>"Home" %>
+      <%= link_to image_tag("tab_home.png"), root_path, :title=>"Home" %>
     </li>
     <li class="<%= controller.controller_name=='servicios' ? 'activetab' : '' %>">
       <div class="tab2 activetabfader"></div>
-      <%= link_to image_tag("tab_servicios.png"), "javascript:void(0)", :title=>"Servicios" %>
+      <%= link_to image_tag("tab_servicios.png"), servicios_path, :title=>"Servicios" %>
     </li>
     <li class="<%= controller.controller_name=='quienes_somos' ? 'activetab' : '' %>">
       <div class="tab3 activetabfader long"></div>
@@ -15,7 +15,7 @@
     </li>
     <li class="<%= controller.controller_name=='contacto' ? 'activetab' : '' %>">
       <div class="tab5 activetabfader"></div>
-      <%= link_to image_tag("tab_contacto.png"), "javascript:void(0)", :title=>"Contacto" %>
+      <%= link_to image_tag("tab_contacto.png"), contacto_path, :title=>"Contacto" %>
     </li>
   </ul>
 
@@ -31,7 +31,7 @@
   <div id="logozone"><a href="/"></a></div>
   
   <span id="header_caption">
-    En <strong>DataFlux</strong> dirigimos y mantenemos sus redes, equipos y herramientas en óptimo estado.
+    <%= raw @headercaption %>
   </span>
   
   <%= form_tag "/", :method=>"get" do %>
