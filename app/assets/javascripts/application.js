@@ -4,6 +4,7 @@
 
 $(document).ready(function() {
   
+  // HEADER SEARCH FORM
   $("#searchsubmit").hover(
     function(){
       $("#searchbutton").css("opacity", 1);
@@ -12,5 +13,7 @@ $(document).ready(function() {
       $("#searchbutton").css("opacity", 0);
     }
   );
+  
+  // 
   
 });

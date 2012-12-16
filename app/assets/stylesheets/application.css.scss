@@ -167,31 +167,47 @@ body ul {
   width:              275px;
   text-align:         right;
 }
-/* HEADER BOTTOM */
+/* HEADER BOTTOM TABS */
 #headerbottom {
-  overflow:           hidden;
   position:           absolute;
   width:              920px;
   z-index:            1;
   margin-top:         -36px;
   margin-left:        15px;
 }
-#headerbottomtabs li {
+.tabmenuheader, .tabmenu li {
   float:              left;
   font-size:          13px;
   padding:            8px 0;
   text-align:         center;
-  width:              96px;
+  width:              230px;
   height:             16px;
   font-family:        impact;
   position:           relative;
 }
-#headerbottomtabs li.long {
-  width:              248px;
-}
-#headerbottomtabs li a {
+.tabmenuheader a, .tabmenu li a {
   text-decoration:    none;
   color:              #ddd;
+}
+/* TAB MENUS */
+.tabmenu {
+  position:           absolute;
+  background:         black;
+  top:                36px;
+}
+.tabmenu li {
+  float:              none;
+  text-align:         left;
+  width:              200px;
+  padding-left:       30px;
+  height:             18px;
+}
+.tabmenu li:hover {
+  cursor:             pointer;
+  background:         #0336a3;
+}
+.tabmenu li:hover a {
+  color:              white;
 }
 
 /* MAIN CONTAINER */
