@@ -14,6 +14,16 @@ $(document).ready(function() {
     }
   );
   
+  // SLIDEDOWN MENUS WHEN HOVERED
+  $(".tabmenuheader").hover(
+    function(){
+      $(this).children("ul").stop(true, true).slideDown();
+    },
+    function(){
+      $(this).children("ul").slideUp();
+    }
+  );
+  
   // HEADER TAB MENU WHOLE LI CLICKABLE
   
   

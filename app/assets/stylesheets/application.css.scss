@@ -173,7 +173,6 @@ body ul {
   width:              920px;
   z-index:            1;
   margin-top:         -36px;
-  margin-left:        15px;
 }
 .tabmenuheader, .tabmenu li {
   float:              left;
@@ -192,22 +191,25 @@ body ul {
 /* TAB MENUS */
 .tabmenu {
   position:           absolute;
-  background:         black;
-  top:                36px;
+  top:                37px;
+  display:            none;
+  border-radius:      0 0 8px 8px;
+  box-shadow:         0 0 4px black;
+  background:         #0a0a0a;
 }
 .tabmenu li {
   float:              none;
   text-align:         left;
   width:              200px;
   padding-left:       30px;
-  height:             18px;
+  text-shadow:        0 1px 1px black;
+}
+.tabmenu li:last-child {
+  border-radius:      0 0 8px 8px;
 }
 .tabmenu li:hover {
   cursor:             pointer;
-  background:         #0336a3;
-}
-.tabmenu li:hover a {
-  color:              white;
+  background:         url("/assets/extrabutton.png");
 }
 
 /* MAIN CONTAINER */
