@@ -214,11 +214,14 @@ body ul {
 
 /* MAIN CONTAINER */
 #maincontainer {
-  background:         url("/assets/containerbg_servers.png");
+  background:         url("/assets/containerbg_home.png");
   width:              920px;
   height:             415px;
   position:           relative;
   top:                1px;
+}
+#maincontainer.contacto {
+  background:         url("/assets/containerbg_contacto.png");
 }
 .maincontainer_caption {
   height:             330px;
