@@ -17,14 +17,63 @@ $(document).ready(function() {
   // SLIDEDOWN MENUS WHEN HOVERED
   $(".tabmenuheader").hover(
     function(){
-      $(this).children("ul").stop(true, true).slideDown();
+      $(this).children("ul").stop(true, true).slideDown("fast");
     },
     function(){
-      $(this).children("ul").slideUp();
+      $(this).children("ul").slideUp("fast");
     }
   );
   
   // HEADER TAB MENU WHOLE LI CLICKABLE
+  $(".tabmenu li").on("click", function() {
+    window.location = $(this).find("a").attr("href");
+    return false;
+  });
   
+  // DEAL WITH PLACEHOLDERS IF BROWSER SUCKS AND DOES NOT FULLY SUPPORT HTML5
+  // [ http://www.cssnewbie.com/cross-browser-support-for-html5-placeholder-text-in-forms/ ]
+  jQuery(function() {
+    jQuery.support.placeholder = false;
+    test = document.createElement('input');
+    if('placeholder' in test) jQuery.support.placeholder = true;
+  });
+  $(function() {
+    if(!$.support.placeholder) { 
+      var active = document.activeElement;
+      $(':text, textarea').focus(function () {
+        if ( $(this).attr('placeholder') != '' && $(this).attr('placeholder') != undefined && $(this).val()==$(this).attr('placeholder')) {
+          $(this).val('').removeClass('hasPlaceholder');
+        }
+      }).blur(function () {
+        if ( $(this).attr('placeholder') != '' && $(this).attr('placeholder') != undefined && ( $(this).val()=='' || $(this).val()==$(this).attr('placeholder')) ) {
+          $(this).val($(this).attr('placeholder'));
+          $(this).addClass('hasPlaceholder');
+        }
+      });
+      $(':text, textarea').blur();
+      $(active).focus();
+    }
+  });
+  
+  // CONTACT FORM VALIDATION
+  $("#contactsubmit").click(function() {
+    $(".formcontainer").removeClass("error"); // REMOVE ERROR CLASS IF PREVIOUS ERRORS
+    $(this).parent().find('.hasPlaceholder').each(function() { $(this).val(''); }); // REMOVE HACKY PLACEHOLDERS
+    // EMAIL NOT NULL
+    if ( $.trim( $("#email").val() ) == "" ) {
+      $("#formcontainer_email").addClass("error");
+      $("#email").focus();
+      return false;
+    }
+    // MSJ NOT NULL
+    else if ( $.trim( $("#msj").val() ) == "" ) {
+      $("#formcontainer_msj").addClass("error");
+      $("#msj").focus();
+      return false;
+    }
+    else {
+      return true;
+    }
+  });
   
 });

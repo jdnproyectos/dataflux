@@ -3,18 +3,7 @@
   <div class="maincontainer_caption">
     <h1 class="contactoheader">Contacto</h1>
     
-    <%= form_tag(contacto_submit_path, :id => "contactform") do %>
-      <div id="formcontainer_nombre" class="formcontainer">
-        <%= text_field_tag :nombre, nil, :placeholder=>"Nombre" %>
-      </div>
-      <div id="formcontainer_email" class="formcontainer">
-        <%= text_field_tag :email, nil, :placeholder=>"Email *" %>
-      </div>
-      <div id="formcontainer_msj" class="formcontainer">
-        <%= text_area_tag :msj, nil, :placeholder=>"Mensaje *" %>
-      </div>
-      <%= submit_tag "Enviar", :id => "contactsubmit", :class=>"submitbutton" %>
-    <% end %>
+    <h2><span class="flux">Mensaje enviado.</span></h2>
     
   </div>
   

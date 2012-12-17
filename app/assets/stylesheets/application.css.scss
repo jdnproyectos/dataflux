@@ -195,7 +195,7 @@ body ul {
   display:            none;
   border-radius:      0 0 8px 8px;
   box-shadow:         0 0 4px black;
-  background:         #0a0a0a;
+  background:         #050505;
 }
 .tabmenu li {
   float:              none;
@@ -238,33 +238,14 @@ body ul {
   cursor:             default;
 }
 .maincontainer_caption h1 span {
-  color:              $links;
   text-shadow:        3px 0 15px black, 3px 0 15px black;
+}
+.flux {
+  color:              $links;
 }
 .maincontainer_caption h2 {
   font-size:          24px;
   line-height:        40px;
-}
-#spanbutton {
-  background:         url("/assets/button.png");
-  box-shadow:         0 0 15px black;
-  display:            block;
-  font-weight:        bold;
-  height:             44px;
-  line-height:        45px;
-  text-align:         center;
-  width:              139px;
-}
-#spanbutton a {
-  color:              #222;
-  text-decoration:    none;
-}
-#spanbutton a:hover {
-  cursor:             default;
-}
-#spanbutton:hover {
-  background:         url("/assets/button_hover.png");
-  cursor:             default;
 }
 /* SUB CONTAINER */
 #subcontainer {
@@ -341,6 +322,43 @@ body ul {
   padding:            16px;
   color:              #eee;
   font-size:          13px;
+}
+
+/* CONTACT */
+.contactoheader {
+  margin-bottom:      20px !important;
+}
+.formcontainer {
+  margin-bottom:      16px;
+}
+.formcontainer input, .formcontainer textarea {
+  width:              500px;
+  text-indent:        5px;
+  font-size:          14px;
+  letter-spacing:     1px;
+}
+.formcontainer input {
+  height:             25px;
+}
+.formcontainer textarea {
+  height:             80px;
+  padding-top:        5px;
+}
+.error input, .error textarea {
+  border:             2px solid red;
+  border-radius:      5px;
+}
+#contactsubmit {
+  background:         url("/assets/button.png");
+  box-shadow:         0 0 15px black;
+  border:             none;
+  width:              139px;
+  height:             44px;
+  font-weight:        bold;
+}
+#contactsubmit:hover {
+  background:         url("/assets/button_hover.png");
+  cursor:             pointer;
 }
 
 /* FOOTER */

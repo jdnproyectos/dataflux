@@ -7,5 +7,6 @@ Dataflux::Application.routes.draw do
   match "quienes_somos" => "quienes_somos#index"
   
   match "contacto" => "contacto#index"
+  match "contacto/submit" => "contacto#submit"
   
 end
