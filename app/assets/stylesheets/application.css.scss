@@ -185,9 +185,12 @@ body ul {
   font-family:        impact;
   position:           relative;
 }
-.tabmenuheader a, .tabmenu li a {
+.tabmenuheader span, .tabmenu li a {
   text-decoration:    none;
   color:              #ddd;
+}
+.tabmenuheader span:hover {
+  cursor:             default;
 }
 /* TAB MENUS */
 .tabmenu {
@@ -197,13 +200,15 @@ body ul {
   border-radius:      0 0 8px 8px;
   box-shadow:         0 0 4px black;
   background:         #050505;
+  margin-left:        10px;
+  width:              210px;
 }
 .tabmenu li {
   float:              none;
   text-align:         left;
-  width:              200px;
   padding-left:       30px;
   text-shadow:        0 1px 1px black;
+  width:              180px;
 }
 .tabmenu li:last-child {
   border-radius:      0 0 8px 8px;
@@ -217,34 +222,37 @@ body ul {
 #maincontainer {
   background:         url("/assets/containerbg_home.jpg");
   width:              920px;
-  height:             415px;
+  min-height:         415px;
   position:           relative;
   top:                1px;
 }
-.maincontainer_caption {
+.maincontainer_content {
   height:             330px;
   width:              520px;  
   position:           absolute;
-  top:                50px;
+  top:                20px;
   left:               40px;
   letter-spacing:     -1px;
 }
-.maincontainer_caption h1, .maincontainer_caption h2 {
+.maincontainer_content.home {
+  top:                50px;
+}
+.maincontainer_content h1, .maincontainer_content h2 {
   color:              #ddd;
   text-shadow:        0 0 15px black, 0 0 15px black;
   font-size:          30px;
   margin-bottom:      40px;
 }
-.maincontainer_caption h1:hover, .maincontainer_caption h2:hover {
+.maincontainer_content h1:hover, .maincontainer_content h2:hover {
   cursor:             default;
 }
-.maincontainer_caption h1 span {
+.maincontainer_content h1 span {
   text-shadow:        3px 0 15px black, 3px 0 15px black;
 }
 .flux {
   color:              $links;
 }
-.maincontainer_caption h2 {
+.maincontainer_content h2 {
   font-size:          24px;
   line-height:        40px;
 }

@@ -30,6 +30,17 @@ $(document).ready(function() {
     return false;
   });
   
+  // SERVICIOS DETAILS WHEN HOVERED
+  $("#servicios_list h3").hover(function() {
+    $(this).toggleClass("hovered");
+    $(this).next(".servicioslist ul").toggleClass("hovered");
+  });
+  $(".servicioslist ul").hover(function() {
+    $(this).toggleClass("hovered");
+    $(this).prev("#servicios_list h3").toggleClass("hovered");
+  });
+  
+  
   // DEAL WITH PLACEHOLDERS IF BROWSER SUCKS AND DOES NOT FULLY SUPPORT HTML5
   // [ http://www.cssnewbie.com/cross-browser-support-for-html5-placeholder-text-in-forms/ ]
   jQuery(function() {

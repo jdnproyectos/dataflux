@@ -3,4 +3,72 @@ $links:               #0c5eff;
 /* MAIN CONTAINER */
 #maincontainer.servicios {
   background:         url("/assets/containerbg_servicios.jpg");
+  min-height:         500px;
+}
+.serviciosheader {
+  margin-bottom:      20px !important;
+}
+
+#servicios_list {
+  width:              840px;
+  overflow:           auto;
+}
+#servicios_list h3 {
+  margin-left:        10px;
+  margin-top:         10px;
+  margin-bottom:      10px;
+  color:              #ddd;
+  text-shadow:        0 0 15px black, 0 0 15px black;
+  font-size:          20px;
+  width:              315px;
+  transition:         all 0.1s;
+  -moz-transition:    all 0.1s;
+  -webkit-transition: all 0.1s;
+  -o-transition:      all 0.1s;
+  -ms-transition:     all 0.1s;
+}
+#servicios_list h3.hovered {
+  color:              white;
+  cursor:             default;
+}
+.servicioslist {
+  float:              left;
+  width:              420px;
+  margin-bottom:      20px;
+}
+.servicioslist ul {
+  margin-left:        25px;
+  background:         rgba(0, 0, 0, 0.5);
+  width:              280px;
+  border-radius:      5px;
+  padding:            10px;
+  transition:         all 0.3s;
+  -moz-transition:    all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition:      all 0.3s;
+  -ms-transition:     all 0.3s;
+}
+.servicioslist ul.hovered {
+  background:         rgba(0, 0, 0, 0.6);
+}
+.servicioslist ul li {
+  padding:            5px;
+  border-radius:      2px;
+  margin-top:         2px;
+  margin-bottom:      2px;
+  text-indent:        10px;
+}
+.servicioslist ul li:hover {
+  background:         url("/assets/extrabutton.png");
+  cursor:             pointer;
+}
+.servicioslist ul li:hover a {
+  color:              white;
+}
+.servicioslist ul a {
+  text-decoration:    none;
+  color:              #ddd;
+  font-weight:        bold;
+  text-shadow:        0 0 15px black, 0 0 15px black;
+  display:            block;
 }
