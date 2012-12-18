@@ -15,6 +15,7 @@ $links:               #0c5eff;
   text-indent:        5px;
   font-size:          14px;
   letter-spacing:     1px;
+  box-shadow:         0 0 10px black;
 }
 .formcontainer input {
   height:             25px;
@@ -29,7 +30,7 @@ $links:               #0c5eff;
 }
 #contactsubmit {
   background:         url("/assets/button.png");
-  box-shadow:         0 0 15px black;
+  box-shadow:         0 0 10px black, 0 0 10px black;
   border:             none;
   width:              139px;
   height:             44px;
