@@ -11,7 +11,7 @@
     </li>
     <li class="<%= controller.controller_name=='quienes_somos' ? 'activetab' : '' %>">
       <div class="tab3 activetabfader long"></div>
-      <%= link_to image_tag("tab_quienes_somos.png"), "javascript:void(0)", :title=>"¿Quiénes somos?" %>
+      <%= link_to image_tag("tab_quienes_somos.png"), quienes_somos_path, :title=>"¿Quiénes somos?" %>
     </li>
     <li class="<%= controller.controller_name=='contacto' ? 'activetab' : '' %>">
       <div class="tab5 activetabfader"></div>

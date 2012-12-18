@@ -2,6 +2,7 @@
  *= require_self
  *= require_tree .
 */
+
 $links:               #0c5eff;
 
 html, body {
@@ -220,9 +221,6 @@ body ul {
   position:           relative;
   top:                1px;
 }
-#maincontainer.contacto {
-  background:         url("/assets/containerbg_contacto.png");
-}
 .maincontainer_caption {
   height:             330px;
   width:              520px;  
@@ -325,43 +323,6 @@ body ul {
   padding:            16px;
   color:              #eee;
   font-size:          13px;
-}
-
-/* CONTACT */
-.contactoheader {
-  margin-bottom:      20px !important;
-}
-.formcontainer {
-  margin-bottom:      16px;
-}
-.formcontainer input, .formcontainer textarea {
-  width:              500px;
-  text-indent:        5px;
-  font-size:          14px;
-  letter-spacing:     1px;
-}
-.formcontainer input {
-  height:             25px;
-}
-.formcontainer textarea {
-  height:             80px;
-  padding-top:        5px;
-}
-.error input, .error textarea {
-  border:             2px solid red;
-  border-radius:      5px;
-}
-#contactsubmit {
-  background:         url("/assets/button.png");
-  box-shadow:         0 0 15px black;
-  border:             none;
-  width:              139px;
-  height:             44px;
-  font-weight:        bold;
-}
-#contactsubmit:hover {
-  background:         url("/assets/button_hover.png");
-  cursor:             pointer;
 }
 
 /* FOOTER */

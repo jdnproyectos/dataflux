@@ -1,3 +1,41 @@
-// Place all the styles related to the contacto controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$links:               #0c5eff;
+
+/* MAIN CONTAINER */
+#maincontainer.contacto {
+  background:         url("/assets/containerbg_contacto.jpg");
+}
+.contactoheader {
+  margin-bottom:      20px !important;
+}
+.formcontainer {
+  margin-bottom:      16px;
+}
+.formcontainer input, .formcontainer textarea {
+  width:              500px;
+  text-indent:        5px;
+  font-size:          14px;
+  letter-spacing:     1px;
+}
+.formcontainer input {
+  height:             25px;
+}
+.formcontainer textarea {
+  height:             80px;
+  padding-top:        5px;
+}
+.error input, .error textarea {
+  border:             2px solid red;
+  border-radius:      5px;
+}
+#contactsubmit {
+  background:         url("/assets/button.png");
+  box-shadow:         0 0 15px black;
+  border:             none;
+  width:              139px;
+  height:             44px;
+  font-weight:        bold;
+}
+#contactsubmit:hover {
+  background:         url("/assets/button_hover.png");
+  cursor:             pointer;
+}
