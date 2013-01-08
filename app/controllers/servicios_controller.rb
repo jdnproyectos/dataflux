@@ -2,7 +2,9 @@
 
 class ServiciosController < ApplicationController
 
-  def index
+  before_filter :set_headercaption
+  
+  def set_headercaption
     @headercaption = "here goes <strong>servicios</strong> header caption."
   end
 

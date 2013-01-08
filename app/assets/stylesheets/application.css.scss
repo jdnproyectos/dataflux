@@ -18,6 +18,9 @@ body a img {
   border:             none;
 }
 body a {
+  color:              #ddd;
+}
+body a:hover {
   color:              $links;
 }
 body ul {
@@ -104,7 +107,7 @@ body ul {
 }
 /* HEADER */
 #header {
-  height:             235px;
+  height:             199px;
   width:              920px;
   background:         url("/assets/header.png");
   position:           relative;
@@ -162,7 +165,7 @@ body ul {
   color:              #ddd;
   font-size:          11px;
   left:               625px;
-  bottom:             65px;
+  bottom:             29px;
   line-height:        16px;
   position:           absolute;
   width:              275px;
@@ -170,10 +173,11 @@ body ul {
 }
 /* HEADER BOTTOM TABS */
 #headerbottom {
-  position:           absolute;
+  position:           relative;
   width:              920px;
   z-index:            1;
-  margin-top:         -36px;
+  height:             36px;
+  background:         url("/assets/headerbottom.png");
 }
 .tabmenuheader, .tabmenu li {
   float:              left;
@@ -236,6 +240,9 @@ body ul {
 }
 .maincontainer_content.home {
   top:                50px;
+}
+.maincontainer_content.servicios_item {
+  width:              840px;  
 }
 .maincontainer_content h1, .maincontainer_content h2 {
   color:              #ddd;

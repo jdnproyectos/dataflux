@@ -46,8 +46,9 @@
   </div>
   
 </div>
-<div id="headerbottom">
 
-  <%= render :partial => "layouts/headerbottomtabs" %>
-
-</div>
+<% if controller.controller_name != "servicios" %>
+  <div id="headerbottom">
+    <%= render :partial => "layouts/headerbottomtabs" %>
+  </div>
+<% end %>
