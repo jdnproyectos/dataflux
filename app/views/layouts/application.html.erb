@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DataFlux<%= " - " + controller.controller_name.gsub("_", " ").capitalize %></title>
+  <title>DataFlux<%= " - " + controller.controller_name.gsub("_", " ").gsub("home","").capitalize %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag    "jquery.fancybox", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <meta name="author" content="dataflux" />
   <meta name="description" content="dataflux" />
-  <meta name="keywords" content="dataflux, redes de datos, servidores, soluciones open source, seguridad, IT, VoIP, dominios, correos, hosting, CCTV" />
+  <meta name="keywords" content="dataflux, redes de datos, enlaces, servidores, telefonia ip, soluciones open source, seguridad, IT, VoIP, dominios, correos, hosting, CCTV" />
   <meta name="robots" content="index,follow" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -16,11 +16,11 @@
 <body>
 
   <div id="bodywrapper">
-    <%= render :partial => "layouts/header" %>
+    <%#= render :partial => "layouts/header" %>
     <%= yield %>
   </div>
-  
-  <%= render :partial => "layouts/footer" %>
-  
+
+  <%#= render :partial => "layouts/footer" %>
+
 </body>
 </html>
