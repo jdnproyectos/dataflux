@@ -1,0 +1,34 @@
+<h2 id="dominios" class="withLEDs">DOMINIOS</h2>
+
+<h3>Nombres de dominio</h3>
+<p>Un nombre de dominio o <strong>domain name</strong> es el nombre que se usará para identificar tu página web y tus correos electrónicos. Por ejemplo: <strong>tudominio.com</strong> ó <strong>info@tudominio.com</strong>.</p>
+
+<h3>TLDs</h3>
+<p><strong>Top-Level Domain</strong> es el nombre usado para referirse a la última parte del nombre de dominio, es decir lo que viene luego del último punto. El TLD de <strong>tudominio.com</strong> es <strong>.com</strong>.</p>
+
+<%= image_tag "inline_dominios_tlds.png", :class=>"inline" %>
+
+<div class="slideableContentWrapper">
+  <h3 class="slideableContentHeader">Acerca de los TLDs</h3>
+  <span class="more" title="Ver más">+</span><span class="less" title="Ver menos">–</span>
+  <div class="slideableContent">
+    <p>Existen muchos TLDs, divididos en tipos y categorías según su uso. Por ejemplo hay una categoría compuesta por TLDs de 2 letras usados para referirse alrededor de 240 países y territorios independientes. Ésta categoría se conoce como <strong>ccTLDs</strong> (<em>country-code TLDs</em>) e incluye el <strong>.co</strong> colombiano. Los TLDs de 3 o más caracteres se conocen como genéricos o gTLDs (<em>generic Top-Level Domains</em>).</p>
+    <%= image_tag "inline_dominios_iana_icann.png", :class=>"inline" %>
+    <p>El manejo de los TLDs es realizado por la corporación sin ánimo de lucro <%= link_to "http://www.iana.org/", :target=>"_blank" do %> IANA (<em>Internet Assigned Numbers Authority</em>) <% end %> que es a su vez manejada por la organización privada <%= link_to "http://www.icann.org/", :target=>"_blank" do %> ICANN (<em>Internet Corporation for Assigned Names and Numbers</em>) <% end %>.</p>
+    <p>Los dominios más conocidos e usados como <strong>.com</strong>, <strong>.net</strong>, <strong>.info</strong> y <strong>.org</strong> pertenecen a la categoría de gTLDs y son de uso público o abierto. Existen sin embargo dominios restringidos que se conocen como sponsored TLDs o sTLDs que implican una asociación con una comunidad específica y por lo tanto las entidades que quieran hacer uso de éstos TLDs deben cumplir con ciertos requerimientos. Por ejemplo el TLD <strong>.museum</strong> solo puede ser usado por museos.</p>
+    <p>Por razones históricas dominios que previamente fueron considerados restringidos ahora se encuentran libres para usarse bajo cualquier propósito, como es el caso de <strong>.com</strong>, <strong>.net</strong>, y <strong>.org</strong>. Para ver una lista exhaustiva de TLDs y su clasificación visite la página del <%= link_to "listado oficial de la IANA", "http://www.iana.org/domains/root/db", :target=>"_blank" %>.</p>
+    <p>A partir de mediados del 2008 gracias a nuevas políticas implementadas por la ICANN se han liberado cientos de nuevos gTLDs que cuentan con menos restricciones que permiten a compañias y organizaciones usar gTLDs exóticos tales como <strong>.auto</strong>, <strong>.cafe</strong>, <strong>.party</strong>, <strong>.casino</strong>, <strong>.juegos</strong>, <strong>.abogado</strong> y <strong>.latino</strong>. Para ver una lista de los gTLDs disponibles visite la lista de ofrecida <%= link_to "en el sitio web de Enom", "http://www.enom.com/domains/featured-domains", :target=>"_blank" %>.</p>
+  </div>
+</div>
+
+<p>En <span class="dataflux">Data<span>Flux</span></span> contamos con las herramientas de software necesarias para ayudarte a realizar el proceso de registrar y administrar el nombre de dominio de tu elección.</p>
+
+<%= image_tag "inline_dominios_tools.png", :class=>"inline", :style=>"margin-bottom:60px;" %>
+
+<h3>Registro de Dominios Restringidos</h3>
+
+<p>Otros gTLDs restringidos populares son <strong>.gov</strong>, <strong>.edu</strong>, <strong>.mil</strong> y <strong>.org</strong>, usados por institutuciones educativas, el gobierno, el ejército y organizaciones sin ánimo de lucro, respectivamente.</p>
+
+<div class="planswrapper dominios">
+  <%= render :partial => "plans_dominios" %>
+</div>

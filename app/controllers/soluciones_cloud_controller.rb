@@ -1,0 +1,2 @@
+class SolucionesCloudController < ApplicationController
+end

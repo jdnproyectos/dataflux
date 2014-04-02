@@ -1,0 +1,19 @@
+<h2 id="noticias" class="withLEDs">NOTICIAS <span class="dataflux">Data<span>Flux</span></span></h2>
+
+<br>
+<% @feed.each do |post| %>
+  <% if post["type"] and post["type"]!="status" %>
+    <div class="facebookpost">
+      <% post_date_str = post["created_time"][0..9].split("-") %>
+      <% post_date = Date.new post_date_str.first.to_i, post_date_str.second.to_i, post_date_str.third.to_i %>
+      <h4><%= image_tag post["icon"] %> &nbsp; <%= date_to_es post_date.strftime("%e de %B, %Y") %></h4>
+      <br>
+      <%= image_tag post["picture"] %>
+      <p><%= post["message"] %></p>
+      <small><%= link_to "Ver en Facebook &nbsp;↗".html_safe, post["link"], :target=>"_blank" %></small>
+      <ul style="padding-left:15px;"><li></li></ul>
+    </div>
+  <% end %>
+<% end %>
+
+<%= link_to "Ver más publicaciones".html_safe, "http://www.facebook.com/dataflux", :target=>"_blank" %>

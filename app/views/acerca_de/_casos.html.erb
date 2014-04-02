@@ -1,0 +1,115 @@
+<h2 id="casos" class="withLEDs">Casos de Éxito</h2>
+<p>Nuestros clientes son nuestra mejor carta de presentación. Contamos con clientes en diversos sectores de la industria y el comercio a nivel nacional.</p>
+
+<% @proyectosweb = [
+  [ "ADUANAS", "Agencia de Aduanas Cantillo Redondo", "http://cantilloredondo.com/", "aducr.jpg" ],
+  [ "EDUCACIÓN", "Funade", "http://funade.edu.co/", "funade.jpg" ],
+  [ "MAQUINARIA PESADA", "Suministros y Soluciones CJ", "http://sssas.co/", "sscj.jpg" ],
+  [ "GENERACIÓN ELECTRICA", "P&S", "http://pyscia.com/", "pys.jpg" ],
+  [ "IMPORTACIÓN", "ProGlobal", "http://importadoraproglobal.com/", "proglobal.jpg" ],
+  [ "CONSTRUCCIÓN", "Constructora Badie", "http://construccionesbadie.co/", "badie.jpg" ],
+  [ "AUTOMOTRIZ", "CDA La 79", "http://cdala79.co/", "cdala79.jpg" ],
+  [ "SALUD", "Mediestética", "http://mediestetica.co/", "mediestetica.jpg" ],
+  [ "MADERAS", "Naturdecks", "http://naturdecks.co/", "naturdecks.jpg" ],
+  [ "RASTREO VEHICULAR", "GSP", "http://gsp.com.co/", "gsp.jpg" ],
+  [ "RELIGIÓN", "Arquidiócesis de Barranquilla", "http://arquidiocesisbaq.org/", "arquidiocesis.jpg" ],
+  [ "ILUMINACIÓN", "Expoluz", "javascript:void(0)", "expoluz.jpg" ],
+  [ "CENTROS COMERCIALES", "CC Country Plaza", "http://cccountryplaza.co/", "countryplaza.jpg" ],
+  [ "ARQUITECTURA", "Work Team Group", "javascript:void(0)", "workteamgroup.jpg" ]
+] %>
+<div class="slideableContentWrapper">
+  <h3 class="slideableContentHeader">Proyectos Web</h3>
+  <span class="more expanded" title="Ver más">+</span><span class="less" title="Ver menos">–</span>
+  <div class="slideableContent">
+    <table class="proyectosweb"><tbody>
+      <% @proyectosweb.each_slice(2) do |slice| %>
+        <tr>
+        <% slice.each do |pw| %>
+          <td>
+            <h3><%= pw.first %></h3><br>
+            <%= link_to (pw.second+" &nbsp;↗").html_safe, pw.third, :target=>"_blank" %>
+            <%= link_to image_tag("proyectosweb/"+pw.fourth), pw.third, :class=>"pwimgwrapper", :target=>"_blank" %></div>
+          </td>
+        <% end %>
+        </tr>
+      <% end %>
+    </tbody></table>
+  </div>
+</div>
+<br>
+<br>
+
+<% @proyectos_streaming = [
+  [ "RADIO Y VIDEO ONLINE", "Emisora Funade.fm", "http://funade.fm/", "funadefm.jpg" ]
+] %>
+<div class="slideableContentWrapper">
+  <h3 class="slideableContentHeader">Proyectos Streaming</h3>
+  <span class="more expanded" title="Ver más">+</span><span class="less" title="Ver menos">–</span>
+  <div class="slideableContent">
+    <table class="proyectosweb"><tbody>
+      <% @proyectos_streaming.each_slice(2) do |slice| %>
+        <tr>
+        <% slice.each do |ps| %>
+          <td>
+            <h3><%= ps.first %></h3><br>
+            <%= link_to (ps.second+" &nbsp;↗").html_safe, ps.third, :target=>"_blank" %><br>
+            <%= link_to image_tag("proyectosweb/"+ps.fourth), ps.third, :class=>"pwimgwrapper", :target=>"_blank" %></div>
+          </td>
+        <% end %>
+        </tr>
+      <% end %>
+    </tbody></table>
+  </div>
+</div>
+<br>
+<br>
+
+<h3>Proyectos TIC</h3>
+<br>
+<br>
+<div class="slideableContentWrapper">
+  <h3 class="slideableContentHeader casos">Colegio Golda-Meir y Colegios Arquidiocesanos San Pedro Apóstol y San Pancracio</h3>
+  <span class="more casos" title="Ver más">+</span><span class="less casos linesx2" title="Ver menos">–</span>
+  <div class="slideableContent">
+    <%= image_tag "inline_casos_olpc_A.jpg", :class=>"banner" %>
+    <p>Los niños y niñas del colegio <strong>Golda-Meir</strong> y los colegios Arquidiocesanos <strong>San Pedro Apóstol</strong> y <strong>San Pancracio</strong> (pertenecientes a la <strong>Fundación Arquidiocesana de Educación</strong> – <%=link_to "FUNADE","http://funade.edu.co/",:target=>"_blank"%>) de Barranquilla recibieron más de <strong>1.100</strong> portátiles <strong>XO</strong> del programa internacional <strong>One Laptop per Child</strong> (<%=link_to "OLPC","http://www.olpccolombia.org/barranquilla/",:target=>"_blank"%>).</p>
+    <%= image_tag "sectionbox_casos_olpc_C.png", :class=>"inline" %>
+    <p>Toda la infraestructura de la red tanto física cableada, inalámbrica y también la configuración de los servidores y computadores fue realizada por el equipo de <span class="dataflux">Data<span>Flux</span></span>.</p>
+    <%= image_tag "inline_casos_olpc_B.jpg", :class=>"inline" %>
+    <div class="inline_caption">Portátiles <strong>XO</strong> del programa <strong>OLPC</strong>.</div>
+  </div>
+</div>
+<br>
+<div class="slideableContentWrapper">
+  <h3 class="slideableContentHeader casos">Puesta en marcha y centralización de toda la infraestructura en redes como voz sobre IP en Funade</h3>
+  <span class="more casos" title="Ver más">+</span><span class="less casos linesx2" title="Ver menos">–</span>
+  <div class="slideableContent">
+    <p>Las instalaciones del centro educativo tenían una infraestructura de red deficiente la cual podía mejorarse, en <span class="dataflux">Data<span>Flux</span></span> se ha venido llevando a cabo la reorganización, acomodación,  y reconfiguración, para llevar a cabo una centralización de todos los servicios informáticos de este centro.</p>
+    <%= image_tag "inline_casos_funade_A.jpg", :class=>"inline" %>
+    <div class="inline_caption">Servidor @Funade.</div>
+    <p>En lo que lleva del año se han venido realizando labores de brindar conectividad a todos los centros educativos que <%=link_to "Funade","http://funade.edu.co/",:target=>"_blank"%> maneja dando cobertura <strong>WiFi</strong> completa a todo el centro educativo.</p>
+    <p>Se ha hecho también un mejor uso de sus servicios informáticos, se ha llegado a implementar una solución <strong>Asterisk</strong> (<strong>Telefonía VoIP</strong>) la cual ha disminuido costos, mejorado la productividad de las personas que trabajan en el centro educativo y modernizado las instalaciones.</p>
+  </div>
+</div>
+<br>
+<div class="slideableContentWrapper">
+  <h3 class="slideableContentHeader casos">Configuración de una red nacional para brindar comunicación segura sobre Internet (Thermotar-Thermocoil)</h3>
+  <span class="more casos" title="Ver más">+</span><span class="less casos linesx2" title="Ver menos">–</span>
+  <div class="slideableContent">
+    <p>Las instalaciones de la empresa <strong>Thermotar-Thermocoil</strong>, empresa dedicada a la fabricación de aires acondicionados centrales y todo lo referente a refrigeración, con grandes años de experiencia, confiaron en nuestro equipo de <span class="dataflux">Data<span>Flux</span></span> para brindar seguridad a su red nacional.</p>
+</p>Es por ello que con nuestro equipo se realizaron labores de instalación y configuración en su red para intercomunicar todas sus sedes por medio de una red segura de comunicación en donde manejan toda la información valiosa de la empresa. Esta red nacional lleva operando sin problema desde el inicio de este año, siempre apoyados bajo nuestro soporte.</p>
+  </div>
+</div>
+<br>
+<div class="slideableContentWrapper">
+  <h3 class="slideableContentHeader casos">Instalación, configuración e interconexión de una red segura inalámbrica de largo alcance para el Instituto Issa Abuchaibe (Sedes Norte, Murillo y Sabanilla)</h3>
+  <span class="more casos" title="Ver más">+</span><span class="less casos linesx3" title="Ver menos">–</span>
+  <div class="slideableContent">
+    <%= image_tag "inline_casos_issa_A.jpg", :class=>"banner" %>
+    <p>El <strong>Instituto de Rehabilitación Issa Abuchaibe</strong> ubicado en la ciudad de Barranquilla dispone de <strong>3</strong> sedes; una al norte de la ciudad, otra al sur y otra en el <strong>Corregimiento de Sabanilla</strong> del Atlántico.</p>
+    <p>El proyecto requería comunicar por medio de una red segura éstas sedes, el problema radicaba en los proveedores del servicio de Internet en las sedes sur y Sabanilla que no disponían de un cubrimiento idóneo. Es por esto que se realizó una interconexión inalámbrica de más de <strong>9 Km</strong> de distancia para comunicar la sede norte con la sur y proveer un enlace seguro de comunicación para toda la infraestructura del instituto, además de poner en marcha los servicios de Internet, Telefonía y <abbr title="Circuito Cerrado de Televisión">CCTV</abbr>.</p>
+    <%= image_tag "inline_casos_issa_B.jpg", :class=>"inline" %>
+    <div class="inline_caption">Antena de comunicación para enlace inalámbrico.</div>
+    <p>Se realizó además la labor de crear una red segura de comunicación en todas sus sedes. Este proyecto culminó con éxito en el año <strong>2012</strong> y no ha presentado ningún problema desde su ejecución.</p>
+  </div>
+</div>

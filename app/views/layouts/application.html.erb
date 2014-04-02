@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DataFlux</title>
+  <title>DataFlux | Servicios y Soluciones para su empresa o negocio</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= stylesheet_link_tag    "jquery.fancybox", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <meta name="author" content="dataflux" />
   <meta name="description" content="dataflux" />
@@ -15,12 +14,45 @@
 </head>
 <body>
 
-  <div id="bodywrapper">
-    <%#= render :partial => "layouts/header" %>
+  <%= render :partial => "layouts/header" %>
+  <% flash.each do |key, msg| %>
+    <div id="<%= key %>">
+      <p><%= msg %></p>
+    </div>
+  <% end %>
+  <div id="content">
+    <%= render :partial => "layouts/slider" %>
     <%= yield %>
   </div>
 
-  <%#= render :partial => "layouts/footer" %>
+  <%= render :partial => "layouts/footer" %>
+
+  <div id="back2top" class="smooth" href="#headertop" data-0="opacity:0;" data-900="opacity:0.6;"></div>
 
 </body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45392240-1']);
+  _gaq.push(['_setDomainName', 'dataflux.com.co']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=468664856582683";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 </html>

@@ -1,0 +1,58 @@
+<div id="footertop"><div class="wrapper">
+
+  <!-- <ul class="footer_pages">
+    <h4>Páginas</h4>
+    <li><%= link_to "Home", root_path, :class=>"shiny" %></li>
+    <li><%= link_to "Herramientas", "#", :class=>"shiny" %></li>
+    <li><%= link_to "Preguntas", "#", :class=>"shiny" %></li>
+    <li><%= link_to "T.I.C.", "#", :class=>"shiny" %></li>
+    <li><%= link_to "Cloud", "#", :class=>"shiny" %></li>
+    <li><%= link_to "Web", "#", :class=>"shiny" %></li>
+    <li><%= link_to "Outsourcing", "#", :class=>"shiny" %></li>
+    <li><%= link_to "Contacto", contacto_path, :class=>"shiny" %></li>
+  </ul> -->
+  <!-- <ul class="twitter">
+    <h4>@DataFlux</h4>
+    <li>
+      <% unless @last_tweet.blank? %>
+        <%= @last_tweet.first.html_safe %><br>
+        <%= link_to distance_of_time_in_words_to_now(@last_tweet.second)+" ago", "http://twitter.com/dataflux/status/"+@last_tweet.third.to_s, :target=>"_blank" %>
+      <% end %>
+    </li>
+  </ul> -->
+
+  <div id="footerseparator" class="A"></div>
+
+  <ul class="facebookbox">
+    <% if ENV["RAILS_ENV"].to_s=="production" %>
+      <div class="fb-like-box" data-href="http://www.facebook.com/DataFlux" data-width="460" data-height="371" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+    <% end %>
+  </ul>
+
+  <div id="footerseparator" class="B"></div>
+
+  <div id="footerinfo">
+    <ul class="social">
+      <li><%= link_to "Facebook", "http://facebook.com/dataflux", :target=>"_blank", :class=>"facebook" %></li>
+      <li><%= link_to "Twitter", "http://twitter.com/dataflux", :target=>"_blank", :class=>"twitter" %></li>
+      <li><%= link_to "Google Plus", "http://plus.google.com/100537062393673080473", :target=>"_blank", :class=>"googlep" %></li>
+      <!-- <li><%= link_to "LinkedIn", "http://linkedin.com/company/dataflux", :target=>"_blank", :class=>"linkedin" %></li>
+      <li><%= link_to "RSS", "#", :target=>"_blank", :class=>"rss" %></li> -->
+      <li><%= link_to "Skype", "#", :target=>"_blank", :class=>"skype" %></li>
+
+      <li class="contactinfo email"><%= link_to "info@dataflux.com.co", "mailto:info@dataflux.com.co" %></li>
+      <li class="contactinfo landphone"><span>(+57 5) 373 2488</span></li>
+      <li class="contactinfo cellphone"><span>(+57) 320 532 4089</span></li>
+      <li class="contactinfo place"><span>Barranquilla, Colombia</span></li>
+    </ul>
+
+    <!-- <div id="subscribe">
+      <p><em>Obtén Noticias Recientes:</em></p>
+      <%= form_tag "#", :method=>"get", :id=>"subscribeform" do %>
+        <%= text_field_tag "subscribe_email", nil, :placeholder=>"Tu email" %>
+        <%= submit_tag " ", :id=>"subscribe_submit" %>
+      <% end %>
+    </div> -->
+  </div>
+
+</div></div>

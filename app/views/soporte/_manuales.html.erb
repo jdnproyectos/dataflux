@@ -1,0 +1,33 @@
+<h2 id="manuales" class="withLEDs">MANUALES DE USUARIO</h2>
+
+<% @docs_web = [
+  [ "Manual de Inicio de Sesión por Primera Vez de Correo Electrónico", "Manual_de_inicio_de_sesion_por_primera_vez_de_correo_corporativo.pdf" ],
+  [ "Cambiar la Contraseña de su Cuenta de Correo Electrónico", "Cambiar_la_contrasena_de_su_cuenta_de_correo_electronico.pdf" ],
+  [ "Agregar Cuentas en el Programa de Outlook 2010 y 2013", "Agregar_cuentas_en_el_programa_de_Outlook_2010_y_2013.pdf" ],
+  [ "Manual de Configuración Microsoft Exchange en iOS (iPhone, iPad)", "Manual_de_Configuracion_Microsoft_Exchange_en_iOS_(iPhone,_iPad).pdf" ],
+  [ "Importar Otras Cuentas Mediante POP3", "Importar_otras_cuentas_mediante_POP3.pdf" ]
+] %>
+<h3>Soporte Web</h3>
+<ul class="extraspaceXL" style="list-style:none;padding-left:20px;">
+  <% @docs_web.each do |doc| %>
+    <% titulo = doc.first %>
+    <% doc = doc.second %>
+    <%# ext = doc[-3..-1] %>
+    <%# ext = "gen" unless %w(pdf doc ppt).include? ext %>
+    <li><span>⇣ &nbsp; <%= link_to titulo, "assets/soporte/#{doc}" %></span></li>
+  <% end %>
+</ul>
+
+<% @docs_tic = [
+  [ "Manual de Configuración VPN Para Windows 7", "Manual_de_Configuracion_VPN_para_Windows_7.pdf" ]
+] %>
+<h3>Soporte TIC</h3>
+<ul class="extraspaceXL" style="list-style:none;padding-left:20px;">
+  <% @docs_tic.each do |doc| %>
+    <% titulo = doc.first %>
+    <% doc = doc.second %>
+    <%# ext = doc[-3..-1] %>
+    <%# ext = "gen" unless %w(pdf doc ppt).include? ext %>
+    <li><span>⇣ &nbsp; <%= link_to titulo, "assets/soporte/#{doc}" %></span></li>
+  <% end %>
+</ul>

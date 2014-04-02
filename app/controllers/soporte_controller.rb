@@ -1,0 +1,2 @@
+class SoporteController < ApplicationController
+end

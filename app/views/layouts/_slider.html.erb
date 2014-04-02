@@ -1,0 +1,39 @@
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <%= image_tag "slide_dx.jpg" %>
+      <div class="slideinfowrapper"><div class="slideinfo dx">
+        <%= link_to image_tag("logo_sphere.png"), acerca_de_path(:anchor=>"head") %>
+      </div></div>
+    </li>
+    <li>
+      <%= image_tag "slide_web.jpg" %>
+      <div class="slideinfowrapper"><div class="slideinfo web">
+        <h2>SERVICIOS WEB</h2>
+        <h3></h3>
+        <div class="slideinfobutton"><%= link_to "VER MÁS", web_path(:anchor=>"head") %></div>
+      </div></div>
+    </li>
+    <li>
+      <%= image_tag "slide_webdev.jpg" %>
+      <div class="slideinfowrapper"><div class="slideinfo webdev">
+        <h2>DESARROLLO Y DISEÑO WEB</h2>
+        <div class="slideinfobutton"><%= link_to "VER MÁS", web_path(:anchor=>"webdev") %></div>
+      </div></div>
+    </li>
+    <li>
+      <%= image_tag "slide_cloud.jpg" %>
+      <div class="slideinfowrapper"><div class="slideinfo cloud">
+        <h2>SOLUCIONES CLOUD</h2>
+        <h3></h3>
+      </div></div>
+    </li>
+    <li>
+      <%= image_tag "slide_tic.jpg" %>
+      <div class="slideinfowrapper"><div class="slideinfo tic">
+        <h2>PROYECTOS TIC</h2>
+        <h3></h3>
+      </div></div>
+    </li>
+  </ul>
+</div>

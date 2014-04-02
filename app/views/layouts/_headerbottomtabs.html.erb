@@ -1,38 +1,48 @@
-<ul id="headerbottomtabs">
-  
-  <li class="tabmenuheader">
-    <span>Infraestructura</span>
-    <ul class="tabmenu">
-      <li><%= link_to "Enlaces de Largo Alcance", "javascript:void(0)" %></li>
-      <li><%= link_to "Redes (empresas)", "javascript:void(0)" %></li>
-      <li><%= link_to "Redes (general)", "javascript:void(0)" %></li>
-    </ul>
-  </li>
-  
-  <li class="tabmenuheader">
-    <span>Soluciones para Servidores</span>
-    <ul class="tabmenu">
-      <li><%= link_to "Servidores VoIP/Asterisk", "javascript:void(0)" %></li>
-      <li><%= link_to "DHCP", "javascript:void(0)" %></li>
-      <li><%= link_to "Proxy", "javascript:void(0)" %></li>
-      <li><%= link_to "Correo", "javascript:void(0)" %></li>
-      <li><%= link_to "Dominios", "javascript:void(0)" %></li>
-      <li><%= link_to "Hosting", "javascript:void(0)" %></li>
-    </ul>
-  </li>
-  
-  <li class="tabmenuheader">
-    <span>Departamento TI</span>
-    <ul class="tabmenu">
-      <li><%= link_to "li", "javascript:void(0)" %></li>
-    </ul>
-  </li>
-  
-  <li class="tabmenuheader">
-    <span>Outsourcing</span>
-    <ul class="tabmenu">
-      <li><%= link_to "li", "javascript:void(0)" %></li>
-    </ul>
-  </li>
+<div id="headerbottomtabs">
 
-</ul>
+  <span class="hbtwrapper">
+    <%= link_to "Quiénes Somos", acerca_de_path(:anchor=>"head"), :class=>(controller.controller_name=="acerca_de" ? "hbt active" : "hbt"), :id=>"hbt_sobrenosotros" %>
+    <div class="dropmenu sobrenosotros">
+      <%= link_to "Sobre Nosotros", acerca_de_path(:anchor=>"sobre_nosotros") %>
+      <%= link_to "Nuestros Servicios", acerca_de_path(:anchor=>"nuestros_servicios") %>
+      <%= link_to "Certificaciones", acerca_de_path(:anchor=>"certificaciones") %>
+      <%= link_to "Casos de Éxito", acerca_de_path(:anchor=>"casos") %>
+    </div>
+  </span>
+
+  <span class="hbtwrapper">
+    <%= link_to "Servicios Web", web_path(:anchor=>"head"), :class=>(controller.controller_name=="servicios_web" ? "hbt active" : "hbt"), :id=>"hbt_web" %>
+    <div class="dropmenu web">
+      <%= link_to "Dominios", web_path(:anchor=>"dominios") %>
+      <%= link_to "Hosting (Alojamiento Web)", web_path(:anchor=>"hosting")%>
+      <%= link_to "Transferencia de Correos", web_path(:anchor=>"correos_transfer")%>
+      <%= link_to "Desarrollo y Diseño Web", web_path(:anchor=>"webdev"), :class=>"smooth" %>
+      <%= link_to "Alojamiento y Streaming de Medios", web_path(:anchor=>"streaming")%>
+      <%= link_to "Envío de Correos Masivo", web_path(:anchor=>"correos_masivo")%>
+    </div>
+  </span>
+
+  <span class="hbtwrapper">
+    <%= link_to "Soluciones Cloud", cloud_path(:anchor=>"head"), :class=>(controller.controller_name=="soluciones_cloud" ? "hbt active" : "hbt"), :id=>"hbt_cloud" %>
+    <div class="dropmenu cloud">
+      <%= link_to "Servidores Privados Virtuales (VPS)", cloud_path(:anchor=>"vps") %>
+      <%= link_to "Hosting en VPS (Cloud Hosting)", cloud_path(:anchor=>"cloud_hosting") %>
+      <%= link_to "Gaming Servers", cloud_path(:anchor=>"gaming_servers") %>
+      <%= link_to "Telefonía IP en la Nube", cloud_path(:anchor=>"tel_ip_nube") %>
+      <%= link_to "Contabilidad en la Nube", cloud_path(:anchor=>"contabilidad_nube") %>
+    </div>
+  </span>
+
+  <span class="hbtwrapper">
+    <%= link_to "Proyectos TIC", tic_path(:anchor=>"head"), :class=>(controller.controller_name=="proyectos_tic" ? "hbt active" : "hbt"), :id=>"hbt_tic" %>
+    <div class="dropmenu tic">
+      <%= link_to "Asesoría", tic_path(:anchor=>"asesoria") %>
+      <%= link_to "Consultoría", tic_path(:anchor=>"consultoria") %>
+      <%= link_to "Tercerización", tic_path(:anchor=>"tercerizacion") %>
+      <%= link_to "Servidores Linux", tic_path(:anchor=>"servidores_linux") %>
+      <%= link_to "Redes", tic_path(:anchor=>"redes") %>
+      <%= link_to "Telefonía IP", tic_path(:anchor=>"telefonia_ip") %>
+    </div>
+  </span>
+
+</div>

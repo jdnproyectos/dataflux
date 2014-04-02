@@ -1,0 +1,77 @@
+<div id="servicios_web_content" class="section_content"><div class="bg" data-0="background-position: 100% 0px;" data-end="background-position: 100% -<%= parallax_offset %>px;" data-anchor-target=".section_content .bg"><div class="wrapper">
+
+  <br>
+  <br>
+
+  <h1 id="head"><span>Servicios Web</span></h1>
+
+  <div class="subsnav">
+    <%= link_to "DOMINIOS", "#dominios" %>
+    <%= link_to "HOSTING", "#hosting" %>
+    <%= link_to "TRANSFERENCIA DE CORREOS", "#correos_transfer" %>
+    <%= link_to "DESARROLLO WEB", "#webdev" %>
+    <%= link_to "STREAMING", "#streaming" %>
+    <%= link_to "ENVÍO DE CORREOS MASIVO", "#correos_masivo" %>
+  </div>
+
+  <div class="sectionbox">
+    <div class="sideimg big">
+      <%= image_tag "sectionbox_dominios.jpg" %>
+    </div>
+    <div class="textwrapper">
+      <%= render :partial => "dominios" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox">
+    <div class="sideimg big nobox hosting">
+      <%= image_tag "sectionbox_hosting.png" %>
+    </div>
+    <div class="textwrapper">
+      <%= render :partial => "hosting" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox">
+    <div class="sideimg big correostransfer">
+      <%= image_tag "sectionbox_correos_transfer.png" %>
+    </div>
+    <div class="textwrapper">
+      <%= render :partial => "correos_transfer" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox">
+    <div class="sideimg big webdev">
+      <%= image_tag "sectionbox_webdev.jpg" %>
+    </div>
+    <div class="textwrapper">
+      <%= render :partial => "web_dev" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox">
+    <div class="sideimg big streaming">
+      <%= image_tag "sectionbox_streaming.png" %>
+    </div>
+    <div class="textwrapper">
+      <%= render :partial => "streaming" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox">
+    <div class="sideimg big streaming">
+      <%= image_tag "sectionbox_correos_masivo.jpg" %>
+    </div>
+    <div class="textwrapper">
+      <%= render :partial => "correos_masivo" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+</div></div></div>

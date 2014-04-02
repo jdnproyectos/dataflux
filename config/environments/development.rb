@@ -13,9 +13,9 @@ Dataflux::Application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
-  
+  # CARE if the mailer can't send
+  config.action_mailer.raise_delivery_errors = true
+
   # default host URL
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
@@ -37,15 +37,16 @@ Dataflux::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  
+
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => 587,
-    :domain               => 'baci.lindsaar.net',
-    :user_name            => 'datafluxbot',
-    :password             => 'root1234',
-    :authentication       => 'plain',
-    :enable_starttls_auto => true  
+    :domain               => "baci.lindsaar.net",
+    :user_name            => "datafluxbot.noreply",
+    :password             => "root1234",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
   }
+
 end

@@ -1,0 +1,20 @@
+<% if %(enlaces soporte contacto).include? controller.controller_name %>
+
+  <div id="headertabsSTICKYwrapper" class="<%= controller.controller_name=='home' ? '' : 'nothome' %>"><div class="headertabsSTICKY">
+    <%= link_to "&nbsp;".html_safe, root_path(:anchor=>"head"), :class=>"home" %>
+    <%= link_to "Enlaces de Interés", enlaces_path(:anchor=>"head"), :class=>(controller.controller_name=="enlaces" ? "current enlaces" : "enlaces") %>
+    <%= link_to "Soporte & Descargas", soporte_path(:anchor=>"head"), :class=>(controller.controller_name=="soporte" ? "current soporte" : "soporte") %>
+    <%= link_to "Contacto", contacto_path(:anchor=>"head"), :class=>(controller.controller_name=="contacto" ? "current contacto" : "contacto") %>
+  </div></div>
+
+<% else %>
+
+  <div id="headertabsSTICKYwrapper" class="<%= controller.controller_name=='home' ? '' : 'nothome' %>"><div class="headertabsSTICKY">
+    <%= link_to "&nbsp;".html_safe, root_path(:anchor=>"head"), :class=>"home" %>
+    <%= link_to "Quiénes Somos", acerca_de_path(:anchor=>"head"), :class=>(controller.controller_name=="acerca_de" ? "current acercade" : "acercade") %>
+    <%= link_to "Servicios Web", web_path(:anchor=>"head"), :class=>(controller.controller_name=="servicios_web" ? "current web" : "web") %>
+    <%= link_to "Soluciones Cloud", cloud_path(:anchor=>"head"), :class=>(controller.controller_name=="soluciones_cloud" ? "current cloud" : "cloud") %>
+    <%= link_to "Proyectos TIC", tic_path(:anchor=>"head"), :class=>(controller.controller_name=="proyectos_tic" ? "current tic last" : "tic last") %>
+  </div></div>
+
+<% end %>

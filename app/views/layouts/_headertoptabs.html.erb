@@ -1,0 +1,16 @@
+<div id="headertop"><div class="wrapper">
+
+  <a href="<%= enlaces_path(:anchor=>'head') %>" class="<%= (controller.controller_name=='enlaces') ? 'shiny active' : 'shiny' %>">
+    <%= image_tag "icon_enlaces.png" %>
+    Enlaces de Interés
+  </a>
+  <a href="<%= soporte_path(:anchor=>'head') %>" class="<%= (controller.controller_name=='soporte') ? 'shiny active' : 'shiny' %>">
+    <%= image_tag "icon_soporte.png" %>
+    Soporte & Descargas
+  </a>
+  <a href="<%= contacto_path(:anchor=>'head') %>" class="<%= (controller.controller_name=='contacto') ? 'shiny active' : 'shiny' %>">
+    <%= image_tag "icon_contacto.png" %>
+    Contacto
+  </a>
+
+</div></div>

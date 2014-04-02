@@ -1,9 +1,25 @@
-<%= link_to "", "#aviso", :id=>"aviso_modal_trigger", :class=>"colorbox" %>
-<div style="display:none;">
-  <div id="aviso" class="modal_aviso">
-    <p>Estamos en remodelación, pronto volveremos con una nueva imagen para <strong>dataflux.com.co</strong></p>
-  </div>
-</div>
+<div id="home_content" class="section_content"><div class="wrapper">
+  <div class="sectionbox homebox trails first"><span>
+    <h2 class="withLEDs">INFRAESTRUCTURA ROBUSTA</h2>
+    <p>Nuestros servicios corren en nuestros propios servidores, ubicados en distintos datacenters del mundo, bajo una infrastructura segura y redundante.</p>
+    <%= link_to "VER MÁS", acerca_de_path %>
+  </span></div>
+  <br>
+  <br>
+  <div class="sectionbox homebox trails second"><span>
+    <h2 class="withLEDs">TUS IDEAS EN SOLUCIONES</h2>
+    <p>Diseñamos y ponemos en marcha proyectos que incluyen servidores, telefonía IP, redes de computación y enlaces de pequeño a gran alcance.</p>
+    <%= link_to "VER MÁS", tic_path %>
+  </span></div>
+  <br>
+  <br>
+  <div class="sectionbox homebox trails third"><span>
+    <h2 class="withLEDs">CONTAMOS CON EXPERIENCIA</h2>
+    <p>Nuestro personal está capacitado y certificado en distintas áreas de la industria IT.</p>
+    <%= link_to "VER MÁS", acerca_de_path(:anchor=>"certificaciones") %>
+  </span></div>
+</div></div>
 
-<%=link_to image_tag("icon_facebook.png"),"http://facebook.com/dataflux/",:class=>"linker facebook",:target=>"_blank"%>
-<%=link_to image_tag("icon_twitter.png"),"http://twitter.com/dataflux/",:class=>"linker twitter",:target=>"_blank"%>
+<%#= render :partial => "social" %>
+
+<%= render :partial => "marcas_y_clientes" %>

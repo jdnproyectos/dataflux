@@ -1,0 +1,2 @@
+class ProyectosTicController < ApplicationController
+end

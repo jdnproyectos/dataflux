@@ -1,0 +1,10 @@
+@media only screen and (max-width:986px) {
+
+  .dropmenu {
+    display: none;
+  }
+  .flex-direction-nav a { margin-top: -75px; }
+  .flex-direction-nav a:before { content: url(icon_slider_prev_small.png); }
+  .flex-direction-nav a.flex-next:before { content: url(icon_slider_next_small.png); }
+
+}

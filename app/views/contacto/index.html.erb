@@ -1,37 +1,26 @@
-<div id="maincontainer" class="contacto">
-  
-  <div class="maincontainer_content">
-    <h1 class="contactoheader">Contacto</h1>
-    
-    <%= form_tag(contacto_submit_path, :id => "contactform") do %>
-      <div id="formcontainer_nombre" class="formcontainer">
-        <%= text_field_tag :nombre, nil, :placeholder=>"Nombre" %>
+<div id="contacto_content" class="section_content"><div class="bg" data-0="background-position: 100% 0px;" data-end="background-position: 100% -<%= parallax_offset %>px;" data-anchor-target=".section_content .bg"><div class="wrapper">
+
+  <br>
+  <br>
+
+  <h1 id="head"><span>Contacto</span></h1>
+
+  <div class="sectionbox contacto">
+    <p>Envíanos tus comentarios, inquietudes o sugerencias.</p>
+    <br>
+    <%= form_tag(contacto_submit_path, :id => "contactoform") do %>
+      <div id="form_nombre" class="contactoformcontainer">
+        <%= text_field_tag :nombre, nil, :placeholder=>"Información de Contacto" %>
       </div>
-      <div id="formcontainer_email" class="formcontainer">
+      <div id="form_email" class="contactoformcontainer">
         <%= text_field_tag :email, nil, :placeholder=>"Email *" %>
       </div>
-      <div id="formcontainer_msj" class="formcontainer">
-        <%= text_area_tag :msj, nil, :placeholder=>"Mensaje *" %>
+      <div id="form_mensaje" class="contactoformcontainer">
+        <%= text_area_tag :mensaje, nil, :placeholder=>"Mensaje *" %>
       </div>
-      <%= submit_tag "Enviar", :id => "contactsubmit", :class=>"submitbutton" %>
+      <br>
+      <div class="submitwrapper"><%= link_to "Enviar", "javascript:void(0);", :id=>"contactosubmit" %></div>
     <% end %>
-    
   </div>
-  
-</div>
-<div id="subcontainer">
 
-  <div id="extra_left">
-    <%= link_to image_tag("extra_th.png"), "javascript:void(0)", :id=>"extra_th" %>
-    <h3>Lorem ipsum dolor sit amet</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <span id="extra_spantab"><%= link_to "NOTICIAS/NOVEDADES", "javascript:void(0)" %></span>
-  </div>
-  
-  <div id="extra_right">
-    <span class="extra_right_row"> <%#= image_tag "extra1.png" %> Extra sub 1 </span>
-    <span class="extra_right_row"> <%#= image_tag "extra2.png" %> Extra sub 2 </span>
-    <span class="extra_right_row"> <%#= image_tag "extra3.png" %> Extra sub 3 </span>
-  </div>
-  
-</div>
+</div></div></div>

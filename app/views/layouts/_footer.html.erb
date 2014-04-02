@@ -1,7 +1,36 @@
-<div id="footer">
-  <span> 
-    <strong>DataFlux</strong> © <%= Date.today.year %> - Todos los derechos reservados.
-    <br>
-    Barranquilla, Col. Cra 46 # 76-200 — info@dataflux.com.co
-  <span>
-</div>
+<div id="footertop"><div class="wrapper">
+
+  <table id="footertopinfo"><tbody>
+    <tr>
+      <td class="leftcol">
+        <span class="cellphone" title="Teléfono Celular">(<span>+</span>57) 320<span>–</span>532<span>–</span>4089</span>
+      </td>
+      <td class="rightcol">
+        <span class="landphone" title="Teléfono Fijo">(<span>+</span>57 5) 373<span>–</span>2488</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="leftcol">
+        <%= link_to "info@dataflux.com.co", "mailto:info@dataflux.com.co", :title=>"Email", :class=>"email" %>
+      </td>
+      <td class="rightcol">
+        <%= link_to "", "http://facebook.com/dataflux", :target=>"_blank", :title=>"Facebook", :class=>"social facebook" %>
+        <%= link_to "", "http://twitter.com/dataflux", :target=>"_blank", :title=>"Twitter", :class=>"social twitter" %>
+        <%= link_to "", "http://plus.google.com/100537062393673080473", :target=>"_blank", :title=>"Google Plus", :class=>"social googlep" %>
+        <%= link_to "", "skype:dataflux?add", :title=>"Skype", :class=>"social skype" %>
+      </td>
+    </tr>
+  </tbody></table>
+
+</div></div>
+
+
+<div id="footerbottom"><div class="wrapper">
+
+  <div id="footerlogo" onclick="window.location.href='/acerca_de'"></div>
+
+  <div class="footerbottom_row">
+    Todos los derechos reservados. <span>©</span> <%= Date.today.year %> Dataflux.
+  </div>
+
+</div></div>

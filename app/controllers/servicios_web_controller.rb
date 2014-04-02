@@ -1,0 +1,2 @@
+class ServiciosWebController < ApplicationController
+end
