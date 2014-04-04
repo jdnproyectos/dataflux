@@ -18,6 +18,7 @@ class HomeController < ApplicationController
       "country_plaza.png",
       "easy_soat.png",
       "gsp.png",
+      "lemon.png",
       "lex_tattoo.png",
       "miramar.png",
       "pasteur.png",
