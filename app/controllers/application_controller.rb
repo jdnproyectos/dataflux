@@ -3,9 +3,10 @@
 class ApplicationController < ActionController::Base
 
   protect_from_forgery
-  helper_method :date_to_es, :parallax_offset
+  helper_method :date_to_es, :parallax_offset, :mobile_device?
 
 #  before_filter :load_tweets
+  before_filter :prepare_for_mobile
 
   def date_to_es(datestring)
     return datestring.gsub("Monday","Lunes").gsub("Tuesday","Martes").gsub("Wednesday","Miércoles").gsub("Thursday","Jueves").gsub("Friday","Viernes").gsub("Saturday","Sábado").gsub("Sunday","Domingo").gsub("January","Enero").gsub("February","Febrero").gsub("March","Marzo").gsub("April","Abril").gsub("May","Mayo").gsub("June","Junio").gsub("July","Julio").gsub("August","Agosto").gsub("September","Septiembre").gsub("October","Octubre").gsub("November","Noviembre").gsub("December","Diciembre")
@@ -13,6 +14,19 @@ class ApplicationController < ActionController::Base
 
   def parallax_offset
     "200"
+  end
+
+  def mobile_device?
+    if session[:mobile_param]
+      session[:mobile_param] == "1"
+    else
+      request.user_agent =~ /Mobile|webOS/
+    end
+  end
+
+  def prepare_for_mobile
+    session[:mobile_param] = params[:mobile] if params[:mobile]
+    request.format = :mobile if mobile_device?
   end
 
 #  def load_tweets

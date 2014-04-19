@@ -1,0 +1,80 @@
+<h2 id="hosting" class="withLEDs">HOSTING (Alojamiento Web)</h2>
+
+<p>Hosting es el servicio que se brinda para tener un espacio que se encuentra en servidores conectados a internet en donde podrás publicar tu página web, tener tus correos electrónicos con el nombre de tu empresa y otras más aplicaciones, permitiendo así que usuarios puedan visitar tu página en cualquier momento.<span id="webmaster"></span></p>
+
+<p><strong>Webmastering</strong> es el servicio de administración y mantenimiento de un sitio web, así como el manejo de los contenidos del mismo.</p>
+
+<p>En <span class="dataflux">Data<span>Flux</span></span> ofrecemos <strong>4</strong> posibilidades para que apartes tu alojamiento en la web con todas las herramientas que necesitas:</p>
+
+<div class="planswrapper hosting">
+  <%= render :partial => "plans_hosting" %>
+</div>
+
+<h3>Otras características incluidas en todos los servicios</h3>
+<ul class="customstyle compact">
+  <li><span>Activación Inmediata</span></li>
+  <li><span>Backup Diario <%= link_to content_tag(:sup, "[4]"), "#foot4", :class=>"footnote", :id=>"footnote4" %></span></li>
+  <li><span>Panel Administrativo cPanel</span></li>
+  <li><span>Servidores Propios</span></li>
+  <li><span>Servidores Linux</span></li>
+  <li><span>Discos Duros en Espejo (RAID 10)</span></li>
+  <li><span>Servidores Certificados con Seguridad SSL</span></li>
+  <li><span>Firewall con Hardware Propio</span></li>
+  <li><span>Servidores DNS Redundantes</span></li>
+  <li><span>Monitoreo de Servidores 24 horas</span></li>
+  <li><span>Monitoreo Red 24 horas</span></li>
+  <li><span>Sistema de Detección de Intrusos propio (IDS)</span></li>
+</ul>
+
+<h3 id="valoragregado">Características con valor agregado</h3>
+<h4>Dominios Genéricos (gTLD) ($30.000 x AÑO x dominio o dominio adicional):</h4>
+<ul class="customstyle compact">
+  <li><span><strong>.com</strong></span></li>
+  <li><span><strong>.net</strong></span></li>
+  <li><span><strong>.org</strong></span></li>
+  <li><span><strong>.info</strong></span></li>
+</ul>
+<h4>Dominios Colombianos (ccTLD) ($60.000 x AÑO x dominio o dominio adicional):</h4>
+<ul class="customstyle compact">
+  <li><span><strong>.com.co</strong></span></li>
+  <li><span><strong>.net.co</strong></span></li>
+  <li><span><strong>.edu.co</strong></span></li>
+  <li><span><strong>.co</strong></span></li>
+</ul>
+<h4>Dominios exóticos o de otros países (TLD) (varía x año según dominio elegido):</h4>
+<ul class="customstyle compact">
+  <li><span><strong>.fm</strong></span></li>
+  <li><span><strong>.tv</strong></span></li>
+  <li><span><strong>.ly</strong></span></li>
+  <li><span><strong>.xxx</strong></span></li>
+  <li><span><%= link_to "Y muchos más...", "http://www.enom.com/domains/featured-domains", :target=>"_blank" %></span></li>
+</ul>
+<h4>OPCIONAL Integración con GOOGLE APPS (US $5 al mes ó US $50 al año x Correo/Usuario al plan escogido):</h4>
+<ul class="compact extraspace">
+  <li><span>Cuenta de Correo de 25GB por usuario con Gmail</span></li>
+  <li><span>Manejo y Colaboración de Documentos en la Nube (DOC, XLS, PPT, PDF, entre otros) con Google Docs</span></li>
+  <li><span>Almacenamiento de 5GB de documentos y otros archivos por usuario vía Google Drive</span></li>
+  <li><span>Plataforma de chat entre usuarios</span></li>
+  <li><span>Video conferencia entre usuarios</span></li>
+  <li><span>Manejo de calendarios entre usuarios</span></li>
+  <li><span>Google+ para empresas</span></li>
+  <li><span>YouTube para empresas con controles de monetización para videos entre otras funciones</span></li>
+</ul>
+
+<h3>Condiciones Comerciales:</h3>
+<ul class="long compact extraspace">
+  <li><span>Si su dominio es nuevo, el servicio se implementa inmediatamente.</span></li>
+  <li><span>Si viene de otro proveedor, el traslado del dominio se da según los tiempos de respuesta de la compañía que le maneja el dominio actualmente (de 1 a 7 días hábiles).</span></li>
+  <li><span>Precios aplican para Hosting por Dominio.</span></li>
+  <li><span>Importación de correos de otros proveedores tiene un costo adicional.</span></li>
+  <li><%= link_to "[1]", "#footnote1", :id=>"foot1", :class=>"foot" %> <span>El servicio de <strong>Webmaster</strong> aplica para páginas desarrolladas por <span class="dataflux">Data<span>Flux</span></span>, no aplica para páginas desarrolladas por terceros.</span></li>
+  <ul>
+    <li><span>El servicio de <strong>Webmaster básico</strong> aplica máximo una <strong>(1)</strong> vez al mes y el cliente deberá proporcionar el contenido mes a mes, el servicio no es acumulable mes a mes.</span></li>
+    <li><span>El servicio de <strong>Webmaster básico</strong> aplica solo para el contenido de la página web, y algunos cambios menores en la programación; no representa cambios en el diseño original o modificaciones completas al código de la misma.</span></li>
+  </ul>
+  <li><%= link_to "[2]", "#footnote2", :id=>"foot2", :class=>"foot" %> <span>Correos manejados por Domains Live de Microsoft (Outlook.com), si el cliente lo desea se pueden implementar correos corporativos con cPanel, limitados al espacio web del plan elegido.</span></li>
+  <li><%= link_to "[3]", "#footnote3", :id=>"foot3", :class=>"foot" %> <span>Otros TLD tienen un valor adicional según el que se seleccione (TLD exóticos, Colombianos o de otros países pueden estar sujetos a <%= link_to "documentación adicional", "#valoragregado", :class=>"smooth", :title=>"Ver: Características Con Valor Agregado" %>)</span></li>
+  <li><%= link_to "[4]", "#footnote4", :id=>"foot4", :class=>"foot" %> <span>Backups se realizan todos los días y se almacenan por una semana.</span></li>
+  <li><%= link_to "[5]", "#footnote5", :id=>"foot5", :class=>"foot" %> <span>El servicio tiene un costo adicional por usuario (buzón de correo) de US  $5 al mes ó US$50 al año.</span></li>
+  <li><span><strong>El servicio se paga por adelantado.</strong></span></li>
+</ul>

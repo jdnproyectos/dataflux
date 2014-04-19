@@ -1,0 +1,27 @@
+<div id="marcas_y_clientes"><div class="wrapper">
+
+  <h3>Nuestros Clientes</h3>
+  <p>Conoce algunos de los clientes que trabajan con nosotros.</p>
+  <br>
+  <% if not @scroller_clientes.empty? %>
+    <div class="scroller clientes">
+      <% @scroller_clientes.each do |sc| %>
+        <div><%= image_tag "clientes/"+sc %></div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <%= image_tag "bg_marcas_y_clientes_separator.png", :class=>"separator" %>
+
+  <h3>Marcas Utilizadas</h3>
+  <p>Éstas son algunas de las tecnologías que utilizamos en nuestros servicios.</p>
+  <br>
+  <% if not @scroller_marcas.empty? %>
+    <div class="scroller marcas">
+      <% @scroller_marcas.each do |sc| %>
+        <div><%= image_tag "marcas/"+sc %></div>
+      <% end %>
+    </div>
+  <% end %>
+
+</div></div>

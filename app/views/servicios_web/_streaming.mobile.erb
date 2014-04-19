@@ -1,0 +1,68 @@
+<h2 id="streaming" class="withLEDs">Streaming</h2>
+
+<h3>¿Qué es Streaming?</h3>
+<p><strong>Streaming</strong> es un término que se refiere a ver u oír un archivo directamente en una página web sin necesidad de descargarlo antes al computador. Bastante utilizado para Radio y TV por Internet, transmisión de eventos, y video por demanda.</p>
+
+<h3>¿Para qué me sirve un servidor de Streaming?</h3>
+<p>Con un servidor de streaming el usuario puede:</p>
+<ul class="extraspace compact customstyle">
+  <li><span>Crear su propia radio o emisora online</span></li>
+  <li><span>Crear su propia TV online o webcast</span></li>
+  <li><span>Emitir un evento en directo, por ej. un concierto o un partido de fútbol</span></li>
+  <li><span>Establecer un sistema de seguridad mediante una <strong>cámara IP</strong> para visualizar el contenido desde su casa o desde un dispositivo móvil</span></li>
+  <li><span>Difundir video en diferido (<strong>On Demand</strong>) alojado en nuestros servidores</span></li>
+  <li><span>Poner en internet aplicaciones compartidas como chats, videochats y juegos en donde todo el mundo puede participar sin problemas e interactuar tiempo real</span></li>
+  <li><span>Aplicaciones para webcam</span></li>
+</ul>
+
+<h3>Video On Demand VOD (diferido)</h3>
+<p>Esta modalidad permite difundir videos previamente grabados alojados en nuestros servidores streaming. Gracias a la modalidad <strong>On Demand</strong> el usuario puede crear un portal web como <strong>YouTube</strong> de forma sencilla.</p>
+<p>Otra de las características del servicio en diferido streaming es que el televidente de la emisión puede adelantar el video sin esperar a que cargue. El servidor de streaming se ajusta al ancho de banda del televidente para evitar cortes en la transmisión, por lo que a través del streaming es posible difundir largometrajes a excelente calidad.</p>
+
+<h3>Emisión en directo (Live Streaming)</h3>
+<p>El servidor de streaming en la modalidad <strong>LIVE</strong> permite difundir video y/o audio en directo a través de internet al mundo. Los usuarios verán exactamente lo que usted está transmitiendo en el mismo momento y hora, de manera que la transmisión es en tiempo real. Puede utilizar cualquier dispositivo de video para realizar la emisión (Webcam, video cámara, micrófono, etc.)<span id="streaming_audio"></span></p>
+
+<h3>Planes Audio Streaming (Transmición de Audio)</h3>
+<br>
+<div class="planswrapper streaming audio">
+  <%= render :partial => "plans_streaming_audio" %>
+</div>
+<h4 style="margin:5px 0 0 0;">*No incluye IVA.</h4>
+
+<h3>Características adicionales de los planes de <strong>audio</strong>:</h3>
+<ul class="extraspace compact customstyle">
+  <li><span>Panel administrativo <strong>Centova Cast</strong></span></li>
+  <li><span>Tipo de servidor: <strong>IceCast</strong> o <strong>SHOUTcast</strong></span></li>
+  <li><span>Navegadores compatibles: <strong>Firefox</strong>, <strong>Google Chrome</strong>, <strong>Internet Explorer</strong>, entre otros</span></li>
+  <li><span>Sistemas Operativos: <strong>Windows</strong>, <strong>OSX</strong>, <strong>Linux</strong></span></li>
+  <li><span>Formato de Audio: <strong>Mp3</strong>, <strong>OGG</strong><%= link_to content_tag(:sup, "[1]"), "#foot1b", :class=>"footnote", :id=>"footnote1b" %>, <strong>AAC+</strong></span></li>
+  <li><span>Bitrate o calidad de audio: <strong>24-320 kbps</strong></span></li>
+  <li><span>Reproductores: <strong>Winamp</strong>, <strong>Windows Media Player</strong>, <strong>iTunes</strong>, <strong>QuickTime</strong>, entre otros</span></li>
+  <li><span>Soporte para dispositivos móviles: <strong>Blackberry</strong><%= link_to content_tag(:sup, "[1]"), "#foot1b", :class=>"footnote", :id=>"footnote1b" %>, <strong>iPhone</strong>, <strong>Android</strong></span></li>
+  <span id="streaming_video"></span>
+</ul>
+
+<h3>Planes Video Streaming (Transmición de Audio & Video)</h3>
+<br>
+<div class="planswrapper streaming video">
+  <%= render :partial => "plans_streaming_video" %>
+</div>
+
+<h4 style="margin:5px 0 0 0;">*No incluye IVA.</h4>
+<h3>Características adicionales de los planes de <strong>video</strong>:</h3>
+<ul class="extraspace compact customstyle">
+  <li><span>Panel administrativo <strong>Cast Control</strong></span></li>
+  <li><span>Navegadores compatibles: <strong>Firefox</strong>, <strong>Google Chrome</strong>, <strong>Internet Explorer</strong>, entre otros</span></li>
+  <li><span>Sistemas Operativos: <strong>Windows</strong>, <strong>OSX</strong>, <strong>Linux</strong></span></li>
+  <li><span>Formato de Streaming: <strong>RTMP</strong>, <strong>RTSP</strong>, <strong>HTTP</strong></span></li>
+  <li><span>Bitrate<%= link_to content_tag(:sup, "[2]"), "#foot2b", :class=>"footnote", :id=>"footnote2b" %> o calidad de video: 144p, 240p, 360p, 480p, 720p</span></li>
+  <li><span>Reproductores compatibles: <strong>QuickTime</strong>, <strong>VLC</strong>, <strong>Adobe Flash Player</strong>, entre otros</span></li>
+  <li><span>Soporte para dispositivos móviles:<%= link_to content_tag(:sup, "[3]"), "#foot3b", :class=>"footnote", :id=>"footnote3b" %> <strong>Blackberry</strong>, <strong>iPhone</strong>, <strong>Android</strong></span></li>
+</ul>
+
+<h3>Condiciones comerciales:</h3>
+<ul class="extraspace compact">
+  <li><span><%= link_to "[1]", "#footnote1b", :id=>"foot1b", :class=>"foot" %> Compatible únicamente en planes con servidor <strong>IceCast</strong>.</span></li>
+  <li><span><%= link_to "[2]", "#footnote2b", :id=>"foot2b", :class=>"foot" %> Según la calidad del video se requerirá un mayor ancho de banda con lo cual no podrá garantizarse la reproducción fluida en diversos dispositivos móviles sobre redes celulares.</span></li>
+  <li><span><%= link_to "[3]", "#footnote3b", :id=>"foot3b", :class=>"foot" %> Dependiendo de la potencia o capacidad técnica del dispositivo móvil se verá afectada la calidad y fluidez de la reproducción.</span></li>
+</ul>

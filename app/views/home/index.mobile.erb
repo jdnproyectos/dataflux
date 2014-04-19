@@ -1,0 +1,28 @@
+<div id="home_content" class="section_content"><div class="wrapper">
+  <div class="sectionbox trails first"></div>
+  <div class="sectionbox homebox first">
+    <span>
+      <h2 class="withLEDs">INFRAESTRUCTURA ROBUSTA</h2>
+      <p>Nuestros servicios corren en nuestros propios servidores, ubicados en distintos datacenters del mundo, bajo una infrastructura segura y redundante.</p>
+      <%= link_to "VER MÁS", acerca_de_path %>
+    </span>
+  </div>
+  <br>
+  <br>
+  <div class="sectionbox trails second"></div>
+  <div class="sectionbox homebox second"><span>
+    <h2 class="withLEDs">TUS IDEAS EN SOLUCIONES</h2>
+    <p>Diseñamos y ponemos en marcha proyectos que incluyen servidores, telefonía IP, redes de computación y enlaces de pequeño a gran alcance.</p>
+    <%= link_to "VER MÁS", tic_path %>
+  </span></div>
+  <br>
+  <br>
+  <div class="sectionbox trails third"></div>
+  <div class="sectionbox homebox third"><span>
+    <h2 class="withLEDs">CONTAMOS CON EXPERIENCIA</h2>
+    <p>Nuestro personal está capacitado y certificado en distintas áreas de la industria IT.</p>
+    <%= link_to "VER MÁS", acerca_de_path(:anchor=>"certificaciones") %>
+  </span></div>
+</div></div>
+
+<%= render :partial => "marcas_y_clientes" %>

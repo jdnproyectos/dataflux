@@ -1,0 +1,49 @@
+<div id="acerca_de_content" class="section_content"><div class="wrapper">
+
+  <br>
+  <br>
+
+  <h1 id="head"><span>Quién es <span class="dataflux">Data<span>Flux</span></span></span></h1>
+
+  <div class="subsnav">
+    <%= link_to "SOBRE NOSOTROS", "#sobre_nosotros" %>
+    <%= link_to "NUESTROS SERVICIOS", "#nuestros_servicios" %>
+    <%= link_to "CERTIFICACIONES", "#certificaciones" %>
+    <%= link_to "CASOS DE ÉXITO", "#casos" %>
+  </div>
+
+  <div class="sectionbox" style="margin-bottom:0;">
+    <%= image_tag "sectionbox_acercade_A.png", :style=>"display:block;margin:40px auto 80px;" %>
+    <div class="textwrapper">
+      <%= render :partial => "sobre_nosotros" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox" style="margin-bottom:0;">
+    <%= image_tag "sectionbox_acercade_B.png", :style=>"display:block;margin:40px auto 80px;" %>
+    <div class="textwrapper">
+      <%= render :partial => "nuestros_servicios" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox" style="margin-bottom:0;">
+    <div class="textwrapper">
+      <%= render :partial => "certificaciones" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <div class="sectionbox">
+    <div class="textwrapper">
+      <%= render :partial => "casos" %>
+    </div>
+    <%= link_to "&nbsp;".html_safe, "#head", :class=>"back2top_inline", :title=>"Volver al tope" %>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+</div></div>

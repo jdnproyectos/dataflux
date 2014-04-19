@@ -19,18 +19,17 @@
 ] %>
 <div class="slideableContentWrapper">
   <h3 class="slideableContentHeader">Proyectos Web</h3>
-  <span class="more expanded" title="Ver más">+</span><span class="less" title="Ver menos">–</span>
+  <span class="more" title="Ver más">+</span><span class="less" title="Ver menos">–</span>
   <div class="slideableContent">
     <table class="proyectosweb"><tbody>
-      <% @proyectosweb.each_slice(2) do |slice| %>
+      <% @proyectosweb.each do |pw| %>
         <tr>
-        <% slice.each do |pw| %>
           <td>
             <h3><%= pw.first %></h3><br>
             <%= link_to (pw.second+" &nbsp;↗").html_safe, pw.third, :target=>"_blank" %>
+            <br>
             <%= link_to image_tag("proyectosweb/"+pw.fourth), pw.third, :class=>"pwimgwrapper", :target=>"_blank" %></div>
           </td>
-        <% end %>
         </tr>
       <% end %>
     </tbody></table>
@@ -44,7 +43,7 @@
 ] %>
 <div class="slideableContentWrapper">
   <h3 class="slideableContentHeader">Proyectos Streaming</h3>
-  <span class="more expanded" title="Ver más">+</span><span class="less" title="Ver menos">–</span>
+  <span class="more" title="Ver más">+</span><span class="less" title="Ver menos">–</span>
   <div class="slideableContent">
     <table class="proyectosweb"><tbody>
       <% @proyectos_streaming.each_slice(2) do |slice| %>

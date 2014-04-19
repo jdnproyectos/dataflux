@@ -4,18 +4,32 @@
 //= require jquery.flexslider
 //= require jquery.hoverIntent
 //= require scrollingcarousel.2.0
-//= require skrollr
 
 
 $(window).load(function() {
   // FLEX MY SLIDER
   $(".flexslider").flexslider();
-
-  // SLIDEABLE STARTS EXPANDED
-  $(".more.expanded").click();
 });
 
 $(document).ready(function() {
+
+  // MOBILE HEADERBOTTOMTABSMENU
+  $("a.hbt").click(function() {
+    if ( $(this).parent().hasClass("expanded") ) {
+      $(this).parent().find(".dropmenu").slideUp();
+      $(this).parent().removeClass("expanded");
+    } else {
+      if ( $(".hbtwrapper.expanded").size() > 0 ) {
+        $(".hbtwrapper.expanded").find(".dropmenu").slideUp();
+        $(".hbtwrapper.expanded").removeClass("expanded");
+        $(this).parent().find(".dropmenu").delay("500").slideDown();
+        $(this).parent().addClass("expanded");
+      } else {
+        $(this).parent().find(".dropmenu").slideDown();
+        $(this).parent().addClass("expanded");
+      }
+    }
+  });
 
   // FIX HEADERS WITH LEDs
   $("h2.withLEDs").wrapInner("<span></span>")
@@ -25,13 +39,8 @@ $(document).ready(function() {
     $(this).parent().toggleClass("hovered");
   });
 
-  // PARALLAX
-  var s = skrollr.init({
-    forceHeight: false
-  });
-
   // UNFINISHED SECTION LINKS (EN CONSTRUCCION)
-  $(".dropmenu.cloud a, .dropmenu.tic a, a#hbt_cloud, a#hbt_tic, .headertabsSTICKY a.cloud, .headertabsSTICKY a.tic, .enconstruccion a").click(function(e) {
+  $(".dropmenu.cloud a, .dropmenu.tic a, .enconstruccion a").click(function(e) {
     e.preventDefault();
   });
   var temp = "";
@@ -77,20 +86,29 @@ $(document).ready(function() {
     $(this).parent().find(".slideableContent").slideDown("slow");
     $(this).hide();
     $(this).parent().find("span.less").fadeIn();
+    $(this).parent().addClass("expanded");
   });
   $("span.less").click(function() {
     $(this).parent().find(".slideableContent").slideUp("slow");
     $(this).hide();
     $(this).parent().find("span.more").fadeIn();
+    $(this).parent().removeClass("expanded");
+  });
+  $(".slideableContentHeader").click(function() {
+    if ( $(this).parent().hasClass("expanded") ) {
+      $(this).parent().find("span.less").click();
+    } else {
+      $(this).parent().find("span.more").click();
+    }
   });
 
-  // STICKY HEADERTABS
-  var elementPosition = $(".flexslider").offset();
+  // BACK2TOP
+  var elementPosition = $(".section_content").offset();
   $(window).scroll(function() {
-    if($(window).scrollTop() > elementPosition.top - 30){
-      $("#headertabsSTICKYwrapper.nothome").show();
+    if($(window).scrollTop() > elementPosition.top){
+      $("#back2top").addClass("on");
     } else {
-      $("#headertabsSTICKYwrapper.nothome").hide();
+      $("#back2top").removeClass("on");
     }
   });
 

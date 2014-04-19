@@ -1,0 +1,33 @@
+<div id="contacto_content" class="section_content"><div class="wrapper">
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1 id="head"><span>Contacto</span></h1>
+
+  <div class="sectionbox contacto">
+    <p>Envíanos tus comentarios, inquietudes o sugerencias.</p>
+    <br>
+    <%= form_tag(contacto_submit_path, :id => "contactoform") do %>
+      <div id="form_nombre" class="contactoformcontainer">
+        <%= text_field_tag :nombre, nil, :placeholder=>"Información de Contacto" %>
+      </div>
+      <div id="form_email" class="contactoformcontainer">
+        <%= text_field_tag :email, nil, :placeholder=>"Email *" %>
+      </div>
+      <div id="form_mensaje" class="contactoformcontainer">
+        <%= text_area_tag :mensaje, nil, :placeholder=>"Mensaje *" %>
+      </div>
+      <br>
+      <div class="submitwrapper"><%= link_to "Enviar", "javascript:void(0);", :id=>"contactosubmit" %></div>
+    <% end %>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div></div>

@@ -10,10 +10,10 @@
       </td>
     </tr>
     <tr>
-      <td class="leftcol">
+      <td class="leftcol extra">
         <%= link_to "info@dataflux.com.co", "mailto:info@dataflux.com.co", :title=>"Email", :class=>"email" %>
       </td>
-      <td class="rightcol">
+      <td class="rightcol extra">
         <%= link_to "", "http://facebook.com/dataflux", :target=>"_blank", :title=>"Facebook", :class=>"social facebook" %>
         <%= link_to "", "http://twitter.com/dataflux", :target=>"_blank", :title=>"Twitter", :class=>"social twitter" %>
         <%= link_to "", "http://plus.google.com/100537062393673080473", :target=>"_blank", :title=>"Google Plus", :class=>"social googlep" %>
@@ -30,7 +30,7 @@
   <div id="footerlogo" onclick="window.location.href='/acerca_de'"></div>
 
   <div class="footerbottom_row">
-    <span>&copy;</span> <%= Date.today.year %> <%= image_tag "logo_pixels.png", :class=>"dataflux" %>. Todos los derechos reservados. <%= link_to "Versión Móbil", :mobile => 1 %>.
+    <span>&copy;</span> <%= Date.today.year %> <%= image_tag "logo_pixels.png", :class=>"dataflux" %>. Todos los derechos reservados. <%= link_to "Versión Desktop", :mobile => 0 %>.
   </div>
 
 </div></div>
