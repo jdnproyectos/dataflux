@@ -43,8 +43,8 @@ Dataflux::Application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain               => "baci.lindsaar.net",
-    :user_name            => "datafluxbot.noreply",
-    :password             => "root1234",
+    :user_name            => "dataflux.noreply",
+    :password             => "datafluxMailerBot",
     :authentication       => "plain",
     :enable_starttls_auto => true
   }

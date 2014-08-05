@@ -77,7 +77,7 @@ Dataflux::Application.configure do
     :port                 => 587,
     :domain               => "baci.lindsaar.net",
     :user_name            => "dataflux.noreply",
-    :password             => "root1234",
+    :password             => "datafluxMailerBot",
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
