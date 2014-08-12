@@ -7,6 +7,8 @@ gem 'pg'
 gem 'thin'
 gem 'twitter'
 gem 'koala'
+gem 'sitemap_generator'
+gem 'fog'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
