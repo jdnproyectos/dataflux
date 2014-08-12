@@ -18,14 +18,14 @@ SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
 
 SitemapGenerator::Sitemap.create do
 
-  add "/enlaces_de_interes"
-  add "/soporte_y_descargas", :changefreq=>"monthly"
+  add "/enlaces-de-interes"
+  add "/soporte-y-descargas", :changefreq=>"monthly"
   add "/contacto", :changefreq=>"monthly"
-  add "/contacto_submit", :changefreq=>"monthly"
+  add "/contacto-submit", :changefreq=>"monthly"
 
-  add "/quienes_somos", :changefreq=>"monthly"
-  add "/servicios_web", :changefreq=>"monthly"
-  add "/soluciones_cloud", :changefreq=>"monthly"
-  add "/proyectos_tic", :changefreq=>"monthly"
+  add "/quienes-somos", :changefreq=>"monthly"
+  add "/servicios-web", :changefreq=>"monthly"
+  add "/soluciones-cloud", :changefreq=>"monthly"
+  add "/proyectos-tic", :changefreq=>"monthly"
 
 end
