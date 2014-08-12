@@ -1,4 +1,4 @@
-<div id="contacto_content" class="section_content"><div class="wrapper">
+<div id="contacto-content" class="section_content"><div class="wrapper">
 
   <br>
   <br>
@@ -11,13 +11,13 @@
     <p>Envíanos tus comentarios, inquietudes o sugerencias.</p>
     <br>
     <%= form_tag(contacto_submit_path, :id => "contactoform") do %>
-      <div id="form_nombre" class="contactoformcontainer">
+      <div id="form-nombre" class="contactoformcontainer">
         <%= text_field_tag :nombre, nil, :placeholder=>"Información de Contacto" %>
       </div>
-      <div id="form_email" class="contactoformcontainer">
+      <div id="form-email" class="contactoformcontainer">
         <%= text_field_tag :email, nil, :placeholder=>"Email *" %>
       </div>
-      <div id="form_mensaje" class="contactoformcontainer">
+      <div id="form-mensaje" class="contactoformcontainer">
         <%= text_area_tag :mensaje, nil, :placeholder=>"Mensaje *" %>
       </div>
       <br>
