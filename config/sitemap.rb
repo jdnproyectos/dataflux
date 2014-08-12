@@ -18,6 +18,8 @@ SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
 
 SitemapGenerator::Sitemap.create do
 
+  add "/", :changefreq=>"monthly"
+
   add "/enlaces_de_interes"
   add "/soporte_y_descargas", :changefreq=>"monthly"
   add "/contacto", :changefreq=>"monthly"
