@@ -12,4 +12,6 @@ Dataflux::Application.routes.draw do
   match "soluciones_cloud" => "soluciones_cloud#index", :as=>"cloud"
   match "proyectos_tic" => "proyectos_tic#index", :as=>"tic"
 
+  match "sitemap" => "sitemap#index"
+
 end
